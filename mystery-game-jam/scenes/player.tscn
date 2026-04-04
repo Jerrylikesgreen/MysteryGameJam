@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://duwum2xa2mgqx"]
+
+[ext_resource type="Script" uid="uid://kgjmceqw72me" path="res://scripts/player_controller.gd" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://dblpfawoopreg" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://bd5t8b8uiovpk" path="res://scripts/player_body.gd" id="2_qhqgy"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u8vuu"]
+height = 2.852539
+
+[node name="Player" type="Node3D" unique_id=1525480450]
+script = ExtResource("1_g2els")
+
+[node name="PlayerBody" type="CharacterBody3D" parent="." unique_id=308237059]
+unique_name_in_owner = true
+script = ExtResource("2_qhqgy")
+
+[node name="PlayerCollisionShape" type="CollisionShape3D" parent="PlayerBody" unique_id=1189749041]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.42626953, 0)
+shape = SubResource("CapsuleShape3D_u8vuu")
+
+[node name="CameraPivot" type="Node3D" parent="PlayerBody" unique_id=1485427654]
+unique_name_in_owner = true
+
+[node name="PlayerCamera" type="Camera3D" parent="PlayerBody/CameraPivot" unique_id=731162990]
+unique_name_in_owner = true
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="PlayerController" type="Node" parent="." unique_id=46767391]
+unique_name_in_owner = true
+script = ExtResource("1_3vyb7")

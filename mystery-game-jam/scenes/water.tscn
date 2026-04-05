@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://p2w4i3sisleq"]
+
+[ext_resource type="Shader" uid="uid://boccp2kfea3tw" path="res://scenes/water.tres" id="1_bdk6y"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3263u"]
+render_priority = 0
+shader = ExtResource("1_bdk6y")
+shader_parameter/direction1 = Vector2(0.01, -0.01)
+shader_parameter/direction2 = Vector2(0.05, 0.01)
+shader_parameter/highlight_threshold = 0.65600003116
+shader_parameter/highlight_threshold2 = 0.270000012825
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_umbte"]
+material = SubResource("ShaderMaterial_3263u")
+size = Vector2(100, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amxg5"]
+albedo_color = Color(5.7155265e-08, 0.114821054, 0.1255281, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3263u"]
+material = SubResource("StandardMaterial3D_amxg5")
+size = Vector2(100, 100)
+
+[node name="Water" type="MeshInstance3D" unique_id=1652149410]
+mesh = SubResource("PlaneMesh_umbte")
+
+[node name="WaterColor" type="MeshInstance3D" parent="." unique_id=1939502322]
+visible = false
+mesh = SubResource("PlaneMesh_3263u")

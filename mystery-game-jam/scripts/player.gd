@@ -10,7 +10,6 @@ extends Node3D
 @onready var camera_pivot: Node3D = %CameraPivot
 
 var _camera_rotation_x: float = 0.0
-var _camera_rotation_y: float = 0.0
 
 func _ready() -> void:
 	# Initialize rotation variable from current pivot
@@ -43,7 +42,6 @@ func _on_look(mouse_delta: Vector2) -> void:
 	_camera_rotation_x = clamp(_camera_rotation_x, -max_look_angle, max_look_angle)
 
 	camera_pivot.rotation_degrees.x = _camera_rotation_x
-	print(_camera_rotation_x)
 
 func _on_jump()->void:
 	pass

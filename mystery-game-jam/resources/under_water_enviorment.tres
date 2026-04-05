@@ -1,0 +1,16 @@
+[gd_resource type="Environment" format=3 uid="uid://cweuuqd5b3nki"]
+
+[ext_resource type="Material" uid="uid://dat45k3pq2a4y" path="res://resources/under_wate_sky.tres" id="1_x7d8t"]
+
+[sub_resource type="Sky" id="Sky_kyfjp"]
+sky_material = ExtResource("1_x7d8t")
+
+[resource]
+background_mode = 2
+background_color = Color(0.5834572, 0.63431615, 0.7813616, 1)
+background_energy_multiplier = 2.0
+sky = SubResource("Sky_kyfjp")
+fog_enabled = true
+fog_light_color = Color(6.1487035e-06, 0.06704487, 0.26322964, 1)
+fog_light_energy = 2.0
+fog_density = 0.1131

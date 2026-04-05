@@ -24,7 +24,7 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		look.emit(event.relative * mouse_sensitivity)
 
-	# Release mouse with ESC
+	# Release mouse with ESC - Used for debugging purposes. Might keep 
 	if event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		is_mouse_free = true
@@ -51,7 +51,7 @@ func _process_movement_input() -> void:
 		move.emit(input_dir.normalized())
 	else:
 		move.emit(Vector3.ZERO)
-
+ 
 
 func _process_jump_input() -> void:
 	if Input.is_action_just_pressed("jump"):

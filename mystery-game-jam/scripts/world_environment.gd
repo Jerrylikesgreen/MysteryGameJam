@@ -15,8 +15,9 @@ func _ready() -> void:
 
 func _on_day_state_changed(state: int) -> void:
 	match state:
-		
+		##TODO Create functions for each state to add Lighting and posible other shaders. 
 		DayNightCycle.DayState.MORNING:
+			
 			environment.sky.sky_material = MORNING_SKY
 			
 		DayNightCycle.DayState.NOON:

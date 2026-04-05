@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://bg1sio1jk3k83"]
 
 [ext_resource type="PackedScene" uid="uid://duwum2xa2mgqx" path="res://scenes/player.tscn" id="1_kyfjp"]
+[ext_resource type="Shader" uid="uid://boccp2kfea3tw" path="res://scenes/water.tres" id="2_amxg5"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_vcg8s"]
-rayleigh_color = Color(0.13229358, 0.4044856, 0.7152674, 1)
+rayleigh_color = Color(0.22595897, 0.5205649, 0.8701965, 1)
+mie_color = Color(1, 1, 1, 1)
+ground_color = Color(0.14168859, 0.51789165, 0.6437444, 1)
 
 [sub_resource type="Sky" id="Sky_kyfjp"]
 sky_material = SubResource("PhysicalSkyMaterial_vcg8s")
@@ -14,10 +17,34 @@ background_color = Color(0.5834572, 0.63431615, 0.7813616, 1)
 background_energy_multiplier = 2.0
 sky = SubResource("Sky_kyfjp")
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_vcg8s"]
-size = Vector2(50, 50)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyfjp"]
+albedo_color = Color(0.13858852, 0.071602665, 1.8049032e-08, 1)
 
-[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_kyfjp"]
+[sub_resource type="BoxMesh" id="BoxMesh_amxg5"]
+material = SubResource("StandardMaterial3D_kyfjp")
+size = Vector3(30, 0.5, 30)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3263u"]
+size = Vector3(30, 0.5, 30)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3263u"]
+render_priority = 0
+shader = ExtResource("2_amxg5")
+shader_parameter/direction1 = Vector2(0.01, -0.01)
+shader_parameter/direction2 = Vector2(0.05, 0.01)
+shader_parameter/highlight_threshold = 0.65600003116
+shader_parameter/highlight_threshold2 = 0.270000012825
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_umbte"]
+material = SubResource("ShaderMaterial_3263u")
+size = Vector2(500, 500)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amxg5"]
+albedo_color = Color(1.0829419e-07, 0.1600456, 0.1765717, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3263u"]
+material = SubResource("StandardMaterial3D_amxg5")
+size = Vector2(500, 500)
 
 [node name="TestWorld" type="Node3D" unique_id=1770372635]
 
@@ -29,12 +56,22 @@ transform = Transform3D(-0.4679276, 0.87947977, -0.0869435, -0.03544946, 0.07962
 shadow_enabled = true
 
 [node name="Floor" type="StaticBody3D" parent="." unique_id=2023887550]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20052814, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=772887]
-mesh = SubResource("PlaneMesh_vcg8s")
+mesh = SubResource("BoxMesh_amxg5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=1022606436]
-shape = SubResource("WorldBoundaryShape3D_kyfjp")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=699972825]
+shape = SubResource("BoxShape3D_3263u")
 
-[node name="Player" parent="Floor" unique_id=1525480450 instance=ExtResource("1_kyfjp")]
+[node name="Player" parent="." unique_id=1525480450 instance=ExtResource("1_kyfjp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1515784, 0)
+
+[node name="Water" type="MeshInstance3D" parent="." unique_id=1470926670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.892725, 0)
+mesh = SubResource("PlaneMesh_umbte")
+
+[node name="Bed" type="MeshInstance3D" parent="Water" unique_id=520502886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -44.172253, 0)
+visible = false
+mesh = SubResource("PlaneMesh_3263u")

@@ -10,7 +10,7 @@ extends Node3D
 @onready var camera_pivot: Node3D = %CameraPivot
 
 var _camera_rotation_x: float = 0.0
-
+var _camera_rotation_y: float = 0.0
 
 func _ready() -> void:
 	# Initialize rotation variable from current pivot
@@ -36,7 +36,7 @@ func _on_move(direction: Vector3)->void:
 
 func _on_look(mouse_delta: Vector2) -> void:
 	# Rotate Player Left / Right (Y axis)
-	rotate_y(-mouse_delta.x * mouse_sensitivity * 0.02)
+	player_body.rotate_y(-mouse_delta.x * mouse_sensitivity * 0.02)
 
 	# Rotate Camera Up / Down (X axis)
 	_camera_rotation_x -= mouse_delta.y * mouse_sensitivity

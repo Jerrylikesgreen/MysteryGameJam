@@ -8,6 +8,7 @@ signal interact_signal
 
 @export var mouse_sensitivity: float = 0.15
 
+var is_mouse_free: bool = false
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -18,18 +19,25 @@ func _physics_process(_delta: float) -> void:
 	_process_jump_input()
 	_process_interact_input()
 
-
 func _input(event: InputEvent) -> void:
+
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		look.emit(event.relative * mouse_sensitivity)
 
 	# Release mouse with ESC
 	if event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		is_mouse_free = true
 
-	# Recapture mouse with left click
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+	# Recapture mouse only if NOT clicking UI
+	if event is InputEventMouseButton \
+	and event.button_index == MOUSE_BUTTON_LEFT \
+	and event.pressed \
+	and is_mouse_free \
+	and get_viewport().gui_get_hovered_control() == null:
+		
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		is_mouse_free = false
 
 
 func _process_movement_input() -> void:

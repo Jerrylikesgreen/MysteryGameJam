@@ -1,15 +1,14 @@
 [gd_scene format=3 uid="uid://bg1sio1jk3k83"]
 
+[ext_resource type="Material" uid="uid://b8qtmimskeq6s" path="res://resources/nigh_sky.tres" id="1_dvny0"]
 [ext_resource type="PackedScene" uid="uid://duwum2xa2mgqx" path="res://scenes/player.tscn" id="1_kyfjp"]
 [ext_resource type="Shader" uid="uid://boccp2kfea3tw" path="res://scenes/water.tres" id="2_amxg5"]
-
-[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_vcg8s"]
-rayleigh_color = Color(0.22595897, 0.5205649, 0.8701965, 1)
-mie_color = Color(1, 1, 1, 1)
-ground_color = Color(0.14168859, 0.51789165, 0.6437444, 1)
+[ext_resource type="Script" uid="uid://ccybkweg8k406" path="res://scripts/world_environment.gd" id="2_dvny0"]
+[ext_resource type="Script" uid="uid://e4rof4p4qtj7" path="res://scripts/day_state_lable.gd" id="3_3263u"]
+[ext_resource type="Script" uid="uid://by1tk1828o2h6" path="res://scripts/day_state_options.gd" id="3_umbte"]
 
 [sub_resource type="Sky" id="Sky_kyfjp"]
-sky_material = SubResource("PhysicalSkyMaterial_vcg8s")
+sky_material = ExtResource("1_dvny0")
 
 [sub_resource type="Environment" id="Environment_amxg5"]
 background_mode = 2
@@ -37,22 +36,24 @@ shader_parameter/highlight_threshold2 = 0.270000012825
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_umbte"]
 material = SubResource("ShaderMaterial_3263u")
-size = Vector2(500, 500)
+size = Vector2(100, 100)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amxg5"]
-albedo_color = Color(1.0829419e-07, 0.1600456, 0.1765717, 1)
+albedo_color = Color(5.7155265e-08, 0.114821054, 0.1255281, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_3263u"]
 material = SubResource("StandardMaterial3D_amxg5")
-size = Vector2(500, 500)
+size = Vector2(100, 100)
 
 [node name="TestWorld" type="Node3D" unique_id=1770372635]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1468334173]
 environment = SubResource("Environment_amxg5")
+script = ExtResource("2_dvny0")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=550753680]
 transform = Transform3D(-0.4679276, 0.87947977, -0.0869435, -0.03544946, 0.079620786, 0.9961947, 0.88305557, 0.46922907, -0.006079682, 0, 71.54056, 0)
+light_color = Color(0.851769, 0.8517689, 0.85176885, 1)
 shadow_enabled = true
 
 [node name="Floor" type="StaticBody3D" parent="." unique_id=2023887550]
@@ -68,10 +69,30 @@ shape = SubResource("BoxShape3D_3263u")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1515784, 0)
 
 [node name="Water" type="MeshInstance3D" parent="." unique_id=1470926670]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.892725, 0)
 mesh = SubResource("PlaneMesh_umbte")
 
-[node name="Bed" type="MeshInstance3D" parent="Water" unique_id=520502886]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -44.172253, 0)
+[node name="WaterColor" type="MeshInstance3D" parent="Water" unique_id=520502886]
 visible = false
 mesh = SubResource("PlaneMesh_3263u")
+
+[node name="DebugginHud" type="CanvasLayer" parent="." unique_id=120966228]
+
+[node name="DayStateOptions" type="HBoxContainer" parent="DebugginHud" unique_id=1065461009]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+alignment = 2
+script = ExtResource("3_umbte")
+
+[node name="NextDayState" type="Button" parent="DebugginHud/DayStateOptions" unique_id=1728012557]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+text = "Next Day State"
+
+[node name="DayStateLable" type="Label" parent="DebugginHud" unique_id=599276864]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Day State"
+script = ExtResource("3_3263u")

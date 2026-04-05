@@ -1,0 +1,6 @@
+[gd_resource type="PhysicalSkyMaterial" format=3 uid="uid://vejmgkr2brbg"]
+
+[resource]
+rayleigh_color = Color(0.310617, 0.31061718, 0.310617, 1)
+mie_color = Color(6.256998e-07, 0.4558578, 0.60833377, 1)
+ground_color = Color(0.07300032, 0.2642109, 0.41300488, 1)

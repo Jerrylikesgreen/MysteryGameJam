@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="MysteryGameJam"
+run/main_scene="uid://bg1sio1jk3k83"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+DayNightCycle="*uid://jpiaij7cjr14"
 
 [file_customization]
 

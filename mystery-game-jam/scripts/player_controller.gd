@@ -31,13 +31,6 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-	# Emit move signal only while right mouse button is pressed
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:
-		if event.pressed:
-
-			move.emit(Vector3(0, 0, 1))  # Example: move forward while pressed
-		else:
-			move.emit(Vector3.ZERO)      # Stop moving when released
 
 func _process_movement_input() -> void:
 	var input_dir := Vector3(

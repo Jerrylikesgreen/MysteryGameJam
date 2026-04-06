@@ -64,6 +64,7 @@ func _underwater_physics(delta: float) -> void:
 	velocity.x = move_dir.x * current_speed
 	velocity.z = move_dir.z * current_speed
 
+
 func _regular_physics(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y -= _gravity * delta
@@ -86,12 +87,10 @@ func move(direction: Vector3) -> void:
 
 
 func jump() -> void:
-	print("jump")
 	if _is_under_water:
 		velocity.y += swim_up_force
 	elif is_on_floor():
 		velocity.y = jump_velocity
-		print("jumping")
 
 
 func set_underwater(state: bool) -> void:

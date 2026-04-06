@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://duwum2xa2mgqx" path="res://scenes/player.tscn" id="1_kyfjp"]
 [ext_resource type="Script" uid="uid://c0m155rneerq8" path="res://scripts/world.gd" id="1_xwrkq"]
 [ext_resource type="Script" uid="uid://ccybkweg8k406" path="res://scripts/world_environment.gd" id="2_dvny0"]
-[ext_resource type="Environment" uid="uid://cweuuqd5b3nki" path="res://resources/under_water_enviorment.tres" id="2_xwrkq"]
+[ext_resource type="Environment" uid="uid://cweuuqd5b3nki" path="res://resources/systems/under_water_enviorment.tres" id="2_xwrkq"]
 [ext_resource type="Script" uid="uid://e4rof4p4qtj7" path="res://scripts/day_state_lable.gd" id="3_3263u"]
 [ext_resource type="Script" uid="uid://by1tk1828o2h6" path="res://scripts/day_state_options.gd" id="3_umbte"]
 [ext_resource type="Texture2D" uid="uid://dp70yeefp6u1x" path="res://icon.svg" id="7_xwrkq"]

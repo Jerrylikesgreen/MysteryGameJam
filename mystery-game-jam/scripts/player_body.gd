@@ -5,7 +5,7 @@ extends CharacterBody3D
 @export var underwater_speed: float = 4.0
 
 @export var jump_velocity: float = 5.0
-@export var swim_up_force: float = 6.0
+@export var swim_up_force: float = 5.0
 
 var _move_input: Vector3 = Vector3.ZERO
 var _is_under_water: bool = false

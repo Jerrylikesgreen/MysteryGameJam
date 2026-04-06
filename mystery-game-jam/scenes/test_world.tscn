@@ -6,6 +6,7 @@
 [ext_resource type="Environment" uid="uid://cweuuqd5b3nki" path="res://resources/under_water_enviorment.tres" id="2_xwrkq"]
 [ext_resource type="Script" uid="uid://e4rof4p4qtj7" path="res://scripts/day_state_lable.gd" id="3_3263u"]
 [ext_resource type="Script" uid="uid://by1tk1828o2h6" path="res://scripts/day_state_options.gd" id="3_umbte"]
+[ext_resource type="Texture2D" uid="uid://dp70yeefp6u1x" path="res://icon.svg" id="7_xwrkq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyfjp"]
 albedo_color = Color(0.13858852, 0.071602665, 1.8049032e-08, 1)
@@ -16,6 +17,12 @@ size = Vector3(30, 0.5, 30)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3263u"]
 size = Vector3(30, 0.5, 30)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nrstc"]
+albedo_texture = ExtResource("7_xwrkq")
+
+[sub_resource type="BoxMesh" id="BoxMesh_7448y"]
+material = SubResource("StandardMaterial3D_nrstc")
 
 [node name="TestWorld" type="Node3D" unique_id=1770372635]
 script = ExtResource("1_xwrkq")
@@ -72,3 +79,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.0046677203, 0.1912404, 0.8298654, 0.09803922)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2045648638]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7416613, -6.5149813)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=256679891]
+mesh = SubResource("BoxMesh_7448y")

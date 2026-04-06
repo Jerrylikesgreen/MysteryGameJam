@@ -4,7 +4,6 @@ class_name World extends Node3D
 
 
 func _ready() -> void:
-	Globals.set_underwater(true)
 	_set_up()
 
 

@@ -44,7 +44,8 @@ func _on_look(mouse_delta: Vector2) -> void:
 	camera_pivot.rotation_degrees.x = _camera_rotation_x
 
 func _on_jump()->void:
-	pass
+	player_body.jump()
+
 
 
 func _on_interact()->void:

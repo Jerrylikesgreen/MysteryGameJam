@@ -35,15 +35,38 @@ func _physics_process(delta: float) -> void:
 	else:
 		_regular_physics(delta)
 
+	move_and_slide()
+
+
+func _underwater_physics(delta: float) -> void:
+	# Apply water drag
+	velocity *= water_drag
+	
 	# Apply gravity
 	if not is_on_floor():
-		if _is_under_water:
-			velocity.y -= _underwater_gravity * delta
-		else:
-			velocity.y -= _gravity * delta
-	else:
-		if not _is_under_water:
-			velocity.y = 0
+		velocity.y -= _underwater_gravity * delta
+		
+	# Swim upward
+	if Input.is_action_pressed("jump"): 
+		## TODO - move this logic into player controls. For now keeping as we might not 
+		## keep this function to "swim"
+		velocity.y += swim_up_force * delta
+	
+	# Convert input to world space
+	var forward = global_transform.basis.z
+	var right = global_transform.basis.x
+	
+	var move_dir = (forward * _move_input.z) + (right * _move_input.x)
+	move_dir = move_dir.normalized() if move_dir.length() > 0 else Vector3.ZERO
+
+	var current_speed = underwater_speed 
+	
+	velocity.x = move_dir.x * current_speed
+	velocity.z = move_dir.z * current_speed
+
+func _regular_physics(delta: float) -> void:
+	if not is_on_floor():
+		velocity.y -= _gravity * delta
 
 	# Convert input to world space
 	var forward = global_transform.basis.z
@@ -53,38 +76,22 @@ func _physics_process(delta: float) -> void:
 	move_dir = move_dir.normalized() if move_dir.length() > 0 else Vector3.ZERO
 
 	# Apply horizontal movement
-	var current_speed = underwater_speed if _is_under_water else speed
+	var current_speed =  speed
 	
 	velocity.x = move_dir.x * current_speed
 	velocity.z = move_dir.z * current_speed
-
-	move_and_slide()
-
-
-func _underwater_physics(delta: float) -> void:
-	# Apply water drag
-	velocity *= water_drag
-
-	# Swim upward
-	if Input.is_action_pressed("jump"):
-		velocity.y += swim_up_force * delta
-
-
-func _regular_physics(delta: float) -> void:
-	# Regular jump
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jump_velocity
-
 
 func move(direction: Vector3) -> void:
 	_move_input = direction
 
 
 func jump() -> void:
+	print("jump")
 	if _is_under_water:
 		velocity.y += swim_up_force
 	elif is_on_floor():
 		velocity.y = jump_velocity
+		print("jumping")
 
 
 func set_underwater(state: bool) -> void:

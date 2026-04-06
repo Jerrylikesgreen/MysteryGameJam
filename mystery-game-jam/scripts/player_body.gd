@@ -2,7 +2,7 @@ class_name PlayerBody
 extends CharacterBody3D
 
 @export var speed: float = 10.0
-@export var underwater_speed: float = 4.0
+@export var underwater_speed: float = 2.5
 
 @export var jump_velocity: float = 5.0
 @export var swim_up_force: float = 5.0
@@ -13,7 +13,7 @@ var _is_under_water: bool = false
 var _gravity: float = 9.8
 var _underwater_gravity: float = 3.0
 
-var water_drag: float = 0.92
+var water_drag: float = 0.9
 
 
 func _ready() -> void:

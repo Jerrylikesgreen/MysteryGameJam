@@ -71,14 +71,15 @@ offset_bottom = 23.0
 text = "Day State"
 script = ExtResource("3_3263u")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2045648638]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7416613, -6.5149813)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=256679891]
-mesh = SubResource("BoxMesh_7448y")
-
 [node name="GPUParticles3D" parent="." unique_id=452486647 instance=ExtResource("8_nrstc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10653758, 2.1493397, -6.4687667)
 
 [node name="GPUParticles3D2" parent="." unique_id=1829008494 instance=ExtResource("8_nrstc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2417061, 2.1493397, -6.4687667)
+
+[node name="GPUParticles3D3" parent="." unique_id=231162960 instance=ExtResource("8_nrstc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.88712, 2.1493397, -6.4687667)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=256679891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7416613, -6.5149813)
+mesh = SubResource("BoxMesh_7448y")

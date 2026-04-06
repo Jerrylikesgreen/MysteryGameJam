@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://e4rof4p4qtj7" path="res://scripts/day_state_lable.gd" id="3_3263u"]
 [ext_resource type="Script" uid="uid://by1tk1828o2h6" path="res://scripts/day_state_options.gd" id="3_umbte"]
 [ext_resource type="Texture2D" uid="uid://dp70yeefp6u1x" path="res://icon.svg" id="7_xwrkq"]
+[ext_resource type="PackedScene" uid="uid://c841q8nc83aky" path="res://scenes/bubble_particle_emitter.tscn" id="8_nrstc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyfjp"]
 albedo_color = Color(0.13858852, 0.071602665, 1.8049032e-08, 1)
@@ -70,18 +71,14 @@ offset_bottom = 23.0
 text = "Day State"
 script = ExtResource("3_3263u")
 
-[node name="Underwater" type="CanvasLayer" parent="." unique_id=1897045142]
-
-[node name="ColorRect" type="ColorRect" parent="Underwater" unique_id=1268908524]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.0046677203, 0.1912404, 0.8298654, 0.09803922)
-
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=2045648638]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7416613, -6.5149813)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=256679891]
 mesh = SubResource("BoxMesh_7448y")
+
+[node name="GPUParticles3D" parent="." unique_id=452486647 instance=ExtResource("8_nrstc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10653758, 2.1493397, -6.4687667)
+
+[node name="GPUParticles3D2" parent="." unique_id=1829008494 instance=ExtResource("8_nrstc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2417061, 2.1493397, -6.4687667)

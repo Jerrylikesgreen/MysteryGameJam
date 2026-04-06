@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c841q8nc83aky"]
+
+[ext_resource type="SphereMesh" uid="uid://b31f2krckjwo" path="res://assets/bubble_mesh.tres" id="1_rwfag"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xwrkq"]
+emission_shape = 1
+emission_sphere_radius = 2.0
+angle_min = -123.399994
+angle_max = 174.90001
+direction = Vector3(0, -1, 0)
+spread = 23.906
+gravity = Vector3(0.2, 1, 0.2)
+scale_min = 0.5
+
+[node name="BubbleParticleEmitter" type="GPUParticles3D" unique_id=452486647]
+amount = 5
+amount_ratio = 0.8447
+lifetime = 5.0
+randomness = 0.79
+process_material = SubResource("ParticleProcessMaterial_xwrkq")
+draw_pass_1 = ExtResource("1_rwfag")

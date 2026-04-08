@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c8v4h348t3t8g"]
+
+[ext_resource type="Script" uid="uid://m4e0si1u2vd" path="res://scripts/interaction_trigger.gd" id="1_q1d61"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_kp0fc"]
+
+[node name="InteractionTrigger" type="Area3D" unique_id=1756612069]
+collision_layer = 2
+script = ExtResource("1_q1d61")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1381903341]
+shape = SubResource("SphereShape3D_kp0fc")

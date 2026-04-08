@@ -7,6 +7,8 @@
 [ext_resource type="Script" uid="uid://e4rof4p4qtj7" path="res://scripts/day_state_lable.gd" id="3_3263u"]
 [ext_resource type="Script" uid="uid://by1tk1828o2h6" path="res://scripts/day_state_options.gd" id="3_umbte"]
 [ext_resource type="Texture2D" uid="uid://dp70yeefp6u1x" path="res://icon.svg" id="7_xwrkq"]
+[ext_resource type="PackedScene" uid="uid://c8v4h348t3t8g" path="res://scenes/interaction_trigger.tscn" id="8_7448y"]
+[ext_resource type="PackedScene" uid="uid://bahavtakdybaq" path="res://scenes/dialoge_screen.tscn" id="8_nrstc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyfjp"]
 albedo_color = Color(0.13858852, 0.071602665, 1.8049032e-08, 1)
@@ -38,6 +40,7 @@ shadow_enabled = true
 
 [node name="Floor" type="StaticBody3D" parent="." unique_id=2023887550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20052814, 0)
+collision_layer = 4
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=772887]
 mesh = SubResource("BoxMesh_amxg5")
@@ -73,3 +76,27 @@ script = ExtResource("3_3263u")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=256679891]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7416613, -6.5149813)
 mesh = SubResource("BoxMesh_7448y")
+
+[node name="InteractionTrigger" parent="MeshInstance3D" unique_id=1756612069 instance=ExtResource("8_7448y")]
+speaker_name = "Floating Box"
+dialogue = "Floating Box has nothing to say "
+has_dialogue = true
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=42416487]
+transform = Transform3D(0.9999892, 0.0045956946, 0.00068593834, -0.0045959367, 0.9999894, 0.0003516844, -0.0006843163, -0.0003548303, 0.9999997, 3.6076481, 1.5882194, -6.5149813)
+mesh = SubResource("BoxMesh_7448y")
+
+[node name="InteractionTrigger" parent="MeshInstance3D2" unique_id=1773677040 instance=ExtResource("8_7448y")]
+speaker_name = "Floating Box"
+dialogue = "Floating BoxCan only speak once"
+one_shot = true
+has_dialogue = true
+
+[node name="DialogeScreen" parent="." unique_id=1074136049 instance=ExtResource("8_nrstc")]
+
+[node name="InteractionTrigger2" parent="." unique_id=2121060609 instance=ExtResource("8_7448y")]
+transform = Transform3D(0.9999892, 0.0045956946, 0.00068593834, -0.0045959367, 0.9999894, 0.0003516844, -0.0006843163, -0.0003548303, 0.9999997, 5.9476986, 1.0521238, -6.5149813)
+speaker_name = "Step Trigger"
+dialogue = "Step Trigger got activated "
+has_dialogue = true
+is_step_trigger = true

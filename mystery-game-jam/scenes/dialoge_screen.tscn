@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://bahavtakdybaq"]
+
+[ext_resource type="Script" uid="uid://dab5bx0amnjl7" path="res://scripts/dialoge_screen.gd" id="1_mcdq5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xr4ms"]
+bg_color = Color(0.099985994, 0.09998601, 0.099985965, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Theme" id="Theme_xr4ms"]
+MarginContainer/constants/margin_bottom = 3
+MarginContainer/constants/margin_left = 3
+MarginContainer/constants/margin_right = 3
+MarginContainer/constants/margin_top = 3
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_xr4ms")
+VBoxContainer/constants/separation = 0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mcdq5"]
+bg_color = Color(0.09803922, 0.09803922, 0.09803922, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+
+[sub_resource type="Theme" id="Theme_1bgv5"]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_mcdq5")
+
+[node name="DialogeScreen" type="CanvasLayer" unique_id=1074136049]
+visible = false
+script = ExtResource("1_mcdq5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=355893614]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -166.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_xr4ms")
+
+[node name="SpeakerNameContainer" type="PanelContainer" parent="VBoxContainer" unique_id=732383202]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+theme = SubResource("Theme_1bgv5")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/SpeakerNameContainer" unique_id=753499435]
+layout_mode = 2
+
+[node name="SpeakerNameLable" type="Label" parent="VBoxContainer/SpeakerNameContainer/MarginContainer" unique_id=1106528596]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Speaker Name"
+horizontal_alignment = 1
+
+[node name="DialogBoxContainer" type="PanelContainer" parent="VBoxContainer" unique_id=640283362]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/DialogBoxContainer" unique_id=972542507]
+layout_mode = 2
+
+[node name="DialogueText" type="RichTextLabel" parent="VBoxContainer/DialogBoxContainer/MarginContainer" unique_id=856210181]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Dialogue"

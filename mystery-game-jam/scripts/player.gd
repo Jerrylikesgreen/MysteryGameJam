@@ -8,6 +8,7 @@ extends Node3D
 @export var mouse_sensitivity: float = 0.1
 @export var max_look_angle: float = 80.0
 @onready var camera_pivot: Node3D = %CameraPivot
+@onready var player_interact_detection: PlayerInteractDetection = %PlayerInteractDetection
 
 var _camera_rotation_x: float = 0.0
 
@@ -49,4 +50,4 @@ func _on_jump()->void:
 
 
 func _on_interact()->void:
-	pass
+	player_interact_detection.interact()

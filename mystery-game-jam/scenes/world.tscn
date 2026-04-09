@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://05eehc03y0et"]
+
+[ext_resource type="Script" uid="uid://c0m155rneerq8" path="res://scripts/world.gd" id="1_qfnet"]
+[ext_resource type="Environment" uid="uid://bn6eyndtkgnkb" path="res://resources/systems/wold_enviorment.tres" id="2_i7141"]
+[ext_resource type="PackedScene" uid="uid://bmuuwrb15hman" path="res://scenes/debuggin_hud.tscn" id="2_qfnet"]
+[ext_resource type="Script" uid="uid://ccybkweg8k406" path="res://scripts/world_environment.gd" id="3_4mrxx"]
+[ext_resource type="PackedScene" uid="uid://bahavtakdybaq" path="res://scenes/dialoge_screen.tscn" id="6_e3hyu"]
+[ext_resource type="PackedScene" uid="uid://duwum2xa2mgqx" path="res://scenes/player.tscn" id="8_4mrxx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyfjp"]
+albedo_color = Color(0.13858852, 0.071602665, 1.8049032e-08, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i7141"]
+material = SubResource("StandardMaterial3D_kyfjp")
+size = Vector3(30, 0.5, 30)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4mrxx"]
+size = Vector3(30, 0.5, 30)
+
+[node name="World" type="Node3D" unique_id=1137195390]
+script = ExtResource("1_qfnet")
+
+[node name="Ui" type="Node" parent="." unique_id=614370905]
+
+[node name="DebugginHud" parent="Ui" unique_id=1669674493 instance=ExtResource("2_qfnet")]
+
+[node name="DialogeScreen" parent="Ui" unique_id=1074136049 instance=ExtResource("6_e3hyu")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1954665154]
+environment = ExtResource("2_i7141")
+script = ExtResource("3_4mrxx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=307121766]
+transform = Transform3D(-0.4679276, 0.87947977, -0.0869435, -0.03544946, 0.079620786, 0.9961947, 0.88305557, 0.46922907, -0.006079682, 0, 71.54056, 0)
+light_color = Color(0.851769, 0.8517689, 0.85176885, 1)
+shadow_enabled = true
+
+[node name="Floor" type="StaticBody3D" parent="." unique_id=92399437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20052814, 0)
+collision_layer = 4
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=1342619435]
+mesh = SubResource("BoxMesh_i7141")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=800408339]
+shape = SubResource("BoxShape3D_4mrxx")
+
+[node name="Player" parent="." unique_id=1525480450 instance=ExtResource("8_4mrxx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.460786, 0)

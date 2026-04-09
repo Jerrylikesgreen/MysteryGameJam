@@ -5,7 +5,7 @@ class_name DialogueScreen extends CanvasLayer
 @onready var dialogue_text: RichTextLabel = %DialogueText
 
 
-@export var type_speed: float = 0.02
+@export var type_speed: float = 0.01
 
 var dialogue_running: bool = false
 

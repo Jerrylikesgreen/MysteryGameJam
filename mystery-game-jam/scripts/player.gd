@@ -13,10 +13,9 @@ extends Node3D
 var _camera_rotation_x: float = 0.0
 
 func _ready() -> void:
-	# Initialize rotation variable from current pivot
 	_camera_rotation_x = camera_pivot.rotation_degrees.x
-	
 	player_camera.current = true
+	
 	_connect_player_controller_signals()
 
 
@@ -35,11 +34,12 @@ func _on_move(direction: Vector3)->void:
 
 
 func _on_look(mouse_delta: Vector2) -> void:
-	# Rotate Player Left / Right (Y axis)
+	## Rotate Player Left / Right (Y axis)
 	player_body.rotate_y(-mouse_delta.x * mouse_sensitivity * 0.02)
 
-	# Rotate Camera Up / Down (X axis)
+	## Rotate Camera Up / Down (X axis)
 	_camera_rotation_x -= mouse_delta.y * mouse_sensitivity
+	## Locks camera from looking too high or low. 
 	_camera_rotation_x = clamp(_camera_rotation_x, -max_look_angle, max_look_angle)
 
 	camera_pivot.rotation_degrees.x = _camera_rotation_x

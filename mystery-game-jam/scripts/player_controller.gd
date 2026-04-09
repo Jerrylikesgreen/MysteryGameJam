@@ -9,6 +9,7 @@ signal interact_signal
 @export var mouse_sensitivity: float = 0.15
 
 var is_mouse_free: bool = false
+var _in_ui: bool = false
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -18,6 +19,7 @@ func _physics_process(_delta: float) -> void:
 	_process_movement_input()
 	_process_jump_input()
 	_process_interact_input()
+	_process_menu_input()
 
 func _input(event: InputEvent) -> void:
 
@@ -52,6 +54,16 @@ func _process_movement_input() -> void:
 	else:
 		move.emit(Vector3.ZERO)
  
+
+func _process_menu_input()->void:
+	if Input.is_action_just_pressed("menu"):
+		Events.menu_button_pressed()
+		if is_mouse_free:
+			is_mouse_free = false
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		else:
+			is_mouse_free = true
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _process_jump_input() -> void:
 	if Input.is_action_just_pressed("jump"):

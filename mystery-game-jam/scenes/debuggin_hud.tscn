@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bmuuwrb15hman"]
+
+[ext_resource type="Script" uid="uid://by1tk1828o2h6" path="res://scripts/day_state_options.gd" id="1_3reck"]
+[ext_resource type="Script" uid="uid://e4rof4p4qtj7" path="res://scripts/day_state_lable.gd" id="2_vlddu"]
+
+[node name="DebugginHud" type="CanvasLayer" unique_id=1669674493]
+
+[node name="DayStateOptions" type="HBoxContainer" parent="." unique_id=747682127]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+alignment = 2
+script = ExtResource("1_3reck")
+
+[node name="NextDayState" type="Button" parent="DayStateOptions" unique_id=796145632]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+text = "Next Day State"
+
+[node name="DayStateLable" type="Label" parent="." unique_id=1753985030]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Day State"
+script = ExtResource("2_vlddu")

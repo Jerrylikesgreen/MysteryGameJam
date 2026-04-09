@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bk7qqemlfcqxh"]
+
+[ext_resource type="Texture2D" uid="uid://dmdn4eog1pf" path="res://assets/placeholders/placeholder_map.png" id="1_80mp5"]
+
+[node name="ActionsMenu" type="CanvasLayer" unique_id=1501408264]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1481913975]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_80mp5")

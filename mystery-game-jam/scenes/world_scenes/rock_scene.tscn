@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cgkmhjgo2tk66"]
+
+[ext_resource type="PackedScene" uid="uid://05eehc03y0et" path="res://scenes/world_scenes/world.tscn" id="1_gk3tw"]
+[ext_resource type="Texture2D" uid="uid://dr2dk8wirihhs" path="res://assets/placeholders/black-stone.jpg" id="2_c5bxk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nvplc"]
+albedo_texture = ExtResource("2_c5bxk")
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_c5bxk"]
+material = SubResource("StandardMaterial3D_nvplc")
+radius = 5.0
+height = 20.0
+
+[node name="World" unique_id=1137195390 instance=ExtResource("1_gk3tw")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ui" parent_id_path=PackedInt32Array(614370905) index="2" unique_id=196569094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.4085827, -19)
+mesh = SubResource("CapsuleMesh_c5bxk")

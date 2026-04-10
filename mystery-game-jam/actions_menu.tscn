@@ -1,13 +1,53 @@
 [gd_scene format=3 uid="uid://bk7qqemlfcqxh"]
 
 [ext_resource type="Texture2D" uid="uid://dmdn4eog1pf" path="res://assets/placeholders/placeholder_map.png" id="1_80mp5"]
+[ext_resource type="Script" uid="uid://7ewwe40fm5qh" path="res://scripts/actions_menu.gd" id="1_nrtxr"]
+[ext_resource type="Script" uid="uid://6w5iejnarlwy" path="res://scripts/actions_buttons.gd" id="3_o814q"]
 
 [node name="ActionsMenu" type="CanvasLayer" unique_id=1501408264]
+script = ExtResource("1_nrtxr")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1481913975]
+[node name="Map" type="TextureRect" parent="." unique_id=1481913975]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_80mp5")
+
+[node name="ActionsButtons" type="Control" parent="." unique_id=192241895 node_paths=PackedStringArray("scene_path_dic")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_o814q")
+scene_path_dic = {
+NodePath("RockButton"): ["res://scenes/world_scenes/rock_scene.tscn", "Rock Scene"],
+NodePath("PortButton"): ["res://scenes/world_scenes/port_scene.tscn", "The Port"],
+NodePath("VillageButton"): ["res://scenes/world_scenes/village_scene.tscn", "The Village"]
+}
+
+[node name="RockButton" type="Button" parent="ActionsButtons" unique_id=1810802835]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 266.0
+offset_right = 440.0
+offset_bottom = 297.0
+text = "Rock"
+
+[node name="PortButton" type="Button" parent="ActionsButtons" unique_id=261909242]
+layout_mode = 0
+offset_left = 716.0
+offset_top = 337.0
+offset_right = 757.0
+offset_bottom = 368.0
+text = "Port"
+
+[node name="VillageButton" type="Button" parent="ActionsButtons" unique_id=1030871698]
+layout_mode = 0
+offset_left = 455.0
+offset_top = 445.0
+offset_right = 514.0
+offset_bottom = 476.0
+text = "Village
+"

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c2kdi5d6bsb2f"]
+
+[ext_resource type="PackedScene" uid="uid://05eehc03y0et" path="res://scenes/world_scenes/world.tscn" id="1_bfjnj"]
+[ext_resource type="PackedScene" uid="uid://p2w4i3sisleq" path="res://scenes/water.tscn" id="2_fi1oo"]
+
+[node name="PortScene" unique_id=1137195390 instance=ExtResource("1_bfjnj")]
+
+[node name="Water" parent="." index="4" unique_id=1652149410 instance=ExtResource("2_fi1oo")]

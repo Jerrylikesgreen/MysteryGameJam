@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://c0m155rneerq8" path="res://scripts/world.gd" id="1_qfnet"]
 [ext_resource type="Environment" uid="uid://bn6eyndtkgnkb" path="res://resources/systems/wold_enviorment.tres" id="2_i7141"]
-[ext_resource type="PackedScene" uid="uid://bmuuwrb15hman" path="res://scenes/debuggin_hud.tscn" id="2_qfnet"]
+[ext_resource type="PackedScene" uid="uid://bmuuwrb15hman" path="res://scenes/ui/debuggin_hud.tscn" id="2_qfnet"]
 [ext_resource type="Script" uid="uid://ccybkweg8k406" path="res://scripts/world_environment.gd" id="3_4mrxx"]
-[ext_resource type="PackedScene" uid="uid://bahavtakdybaq" path="res://scenes/dialoge_screen.tscn" id="6_e3hyu"]
+[ext_resource type="PackedScene" uid="uid://bk7qqemlfcqxh" path="res://actions_menu.tscn" id="4_i7141"]
+[ext_resource type="PackedScene" uid="uid://ely50ss0yr71" path="res://scenes/ui/transition_screen.tscn" id="5_tkitp"]
+[ext_resource type="PackedScene" uid="uid://bahavtakdybaq" path="res://scenes/ui/dialoge_screen.tscn" id="6_e3hyu"]
 [ext_resource type="PackedScene" uid="uid://duwum2xa2mgqx" path="res://scenes/player.tscn" id="8_4mrxx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyfjp"]
@@ -25,6 +27,12 @@ script = ExtResource("1_qfnet")
 [node name="DebugginHud" parent="Ui" unique_id=1669674493 instance=ExtResource("2_qfnet")]
 
 [node name="DialogeScreen" parent="Ui" unique_id=1074136049 instance=ExtResource("6_e3hyu")]
+
+[node name="ActionsMenu" parent="Ui" unique_id=1501408264 instance=ExtResource("4_i7141")]
+visible = false
+
+[node name="TransitionScreen" parent="Ui" unique_id=1703614882 instance=ExtResource("5_tkitp")]
+visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1954665154]
 environment = ExtResource("2_i7141")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bxickwoqsrlxt"]
+
+[ext_resource type="PackedScene" uid="uid://05eehc03y0et" path="res://scenes/world_scenes/world.tscn" id="1_f63oo"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_f63oo"]
+size = Vector3(10, 5, 3)
+
+[sub_resource type="PrismMesh" id="PrismMesh_l3rjs"]
+size = Vector3(12, 5, 3)
+
+[node name="village_scene" unique_id=1137195390 instance=ExtResource("1_f63oo")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="4" unique_id=1234503313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.536879, -16.296652)
+mesh = SubResource("BoxMesh_f63oo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D" index="0" unique_id=823429987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3493376, 0)
+mesh = SubResource("PrismMesh_l3rjs")

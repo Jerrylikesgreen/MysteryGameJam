@@ -1,0 +1,1547 @@
+{
+	"startingElement": "5a0d2ebc-59b2-43b9-960e-06c46085aed2",
+	"boards": {
+		"0813789b-7a93-4c6e-b76c-da549357e9c4": {
+			"name": "Ferryman Dialogue",
+			"notes": [],
+			"jumpers": [
+                "700c1b99-8601-4cdd-9b13-f518975b6feb"
+			],
+			"branches": [],
+			"elements": [
+				"a4763617-fbe9-4330-8f36-a40d79caaf58",
+				"cf116c30-31d9-4b06-a9bf-686266a9c57d",
+				"275afbc0-232c-4148-a57e-0852bcd1878d",
+                "22f88fea-8357-4bb3-9045-f79759693ebd"
+			],
+			"connections": [
+				"2f24b12e-1b31-4a06-b749-54556e6b845e",
+				"f909fc7f-ab14-471d-9337-48d52a2f2737",
+				"397df084-d6fa-41fb-ab1f-7cffa4b826fd",
+				"630142a2-a13f-4cfc-b3cb-80ffe484571a",
+                "e2866cf2-9179-48f2-a194-396ccf64c604"
+			]
+		},
+		"2ad15ff6-f2ba-4f1d-9d9d-68938c683d7e": {
+			"name": "Root",
+			"root": true,
+			"children": [
+				"3fa425e5-7162-4301-8020-bc441e8ef4b2",
+                "a933be1a-31c2-45fd-97a3-a2191c6d8be7"
+			]
+		},
+		"30636e0d-58ce-484e-a1c3-07995bce2098": {
+			"name": "Felipe introduction",
+			"notes": [],
+			"jumpers": [
+				"69ab7d1f-80c9-4c8a-96e0-ba52325beadf",
+                "7a1bdf78-8570-443d-add4-b950a568ec5e"
+			],
+			"branches": [],
+			"elements": [
+				"89694351-3cd1-4e4c-a244-c855fefeb61b",
+				"ef6c6352-1b84-4430-acce-5855d60b933f",
+				"33e78e37-f0e7-4548-919d-685b5173e161",
+				"f72583f0-623b-43d7-89e3-e98b13573ade",
+				"b4866df0-87e9-4878-b4bd-54b5846f1df4",
+				"552153f1-8ba0-44d4-8ca4-cf495e5f9727",
+				"a6db0260-d7db-4a21-a2c0-e68583ad5a12",
+				"d32a4b33-ec1b-47e3-b56e-1a558dff08fa",
+				"a77af373-587a-4562-905d-1c100a157004",
+                "a60b4e72-315a-465e-a7d7-1fc325ad6bc1"
+			],
+			"connections": [
+				"d7657280-61af-40d3-b99a-f956a73f6de6",
+				"7074f3e5-a108-44c6-b603-6789a65b9f88",
+				"2c6b84e7-caf8-4b39-b8b2-a0eeea55184b",
+				"fe43bb9d-75c1-4ceb-a6d3-32f04803858a",
+				"84b18b8b-0c31-43df-9c1f-8221c304dd6c",
+				"edbcc910-2075-45c7-b958-5ca89c8ec737",
+				"c2f79bf5-55b9-45c3-b12c-0c6f9d8a2b61",
+				"272325c2-4d79-45d5-989c-321dc7ea6c98",
+				"32636703-f8f9-4dd0-8781-32c9283401dd",
+				"e027b08e-b642-4c6d-a1c2-9cc074fc4cf0",
+				"dedc1b6d-cb3f-49d2-afe8-6d504c699ec6",
+				"4f540996-a97a-4037-8e7a-1d04196ed560",
+				"3e928273-16e8-4930-bf10-92ff4cf53e01",
+				"86767fff-a7b0-43e6-9c8c-d93d263db680",
+				"5381469a-55ff-4a3a-bc78-e2ba7db5fbc8",
+                "d0b1ad45-07e4-4938-8dc6-cc12d4d9f1b4"
+			]
+		},
+		"355d7214-53c1-4d61-8ffd-a9ef17d84142": {
+			"name": "Villager Dialouge",
+			"children": [
+				"71925138-4b5c-4772-bb9b-0068ac66f26c",
+                "ceda31e2-f69d-4500-adf5-6f894440e6b7"
+			]
+		},
+		"3fa425e5-7162-4301-8020-bc441e8ef4b2": {
+			"name": "Days",
+			"children": [
+				"eacf1217-b018-4e2b-96fe-6bc4751c5800",
+                "630fdb8a-48d6-473e-9974-2460f7eb2b41"
+			]
+		},
+		"630fdb8a-48d6-473e-9974-2460f7eb2b41": {
+			"name": "Day 0",
+			"notes": [
+				"9555446a-7bea-48d6-958d-8be6d5fa88ff",
+                "4ee7bd49-1b8e-4159-8b82-19c7f6146bb2"
+			],
+			"jumpers": [
+				"5aa11b42-b2c2-4a68-afae-d039a2e3ffca",
+				"4926e9fd-9ca7-42ec-a37e-344c9b0af377",
+				"9483ee61-a342-4f49-af6a-f61d9f7ff5b1",
+				"405755f1-283f-441d-b9a1-2291a0713dcc",
+				"fe288a22-422b-4651-8a3c-8aad0f7507fa",
+				"891277b4-87ca-41e5-a340-d9446aaac45a",
+                "9fe82f70-8b39-4fb4-9d5a-b95523f37451"
+			],
+			"branches": [
+				"022510ba-5c3d-4cc7-b000-3564198eb58d",
+                "1ff5d492-bfec-4494-b883-9f3ed9914cce"
+			],
+			"customId": "starting_dialogue_elements",
+			"elements": [
+				"5a0d2ebc-59b2-43b9-960e-06c46085aed2",
+				"8aeb9035-b4e6-4bd8-89ca-a064c5d388be",
+                "0b290aa1-e77e-4392-8e4c-f826c9d67b27"
+			],
+			"connections": [
+				"ba0a1c80-87b3-44c0-ab85-aa22c6566669",
+				"e4dc8ac4-3b11-469a-a50f-235b3a7c5c3f",
+				"1058d34e-af77-4eb7-acdf-8c636ed64292",
+				"15f42f7d-7f81-4535-a9f2-ba48ec020795",
+				"be70b36a-9232-465a-94d4-d7f745bd5983",
+				"b5d2d5f5-0e72-4545-b0a3-fbf346c87723",
+				"56689eca-7ce6-4cad-9fb9-42a054d6e740",
+                "43be4cb5-975e-42ab-8a45-b81d3c6df1a6"
+			],
+			"variables": [
+				"b6aecf90-c76b-45e5-85d3-853670d1ffb9",
+				"6700398b-60c0-4f1d-97f8-6670af54764f",
+                "4634c6f4-1343-4441-b7b9-f93c19f6513f"
+			]
+		},
+		"71925138-4b5c-4772-bb9b-0068ac66f26c": {
+			"name": "Drunken Villager",
+			"notes": [],
+			"jumpers": [
+                "26b4313f-c76e-4b3a-9e24-8a2a9bba0dec"
+			],
+			"branches": [],
+			"elements": [
+				"986d7094-994a-4323-911b-f4565582f7c6",
+				"055ad576-3412-4d8b-98e9-b36195303e72",
+				"961fe682-c9ff-4d41-9d59-8a3c0b072e5a",
+				"e28086eb-7d82-496b-82d8-d0f26e043202",
+				"ac0397d3-272f-491d-a67d-2f898c17665b",
+				"4afb52fe-3d44-495b-9e93-545426d86217",
+				"821e85ae-40f1-4796-8756-58cd4d3d1622",
+				"44478d95-9931-46bf-a61d-f5800e942883",
+				"9e1ab3a4-e05a-452b-8f2c-b76725266971",
+                "07c8e997-fefd-4f95-9f6f-4af18c052969"
+			],
+			"connections": [
+				"6154adfc-d3fa-4e89-93bb-c033cd1f5dd8",
+				"8acd963c-6986-4aed-92ce-574d0b963828",
+				"f06ed38a-2f6f-4270-8e63-ce3faaa0ba4f",
+				"7ae3816f-1212-4ab1-898c-765900639f79",
+				"163b0217-47df-40a2-874c-8d56c81ab8d8",
+				"b639f601-dbd2-4f43-81d3-5ca403ae1f33",
+				"6d0bb1e2-20da-4792-9ed4-577105c85415",
+				"a9feca8b-d5cb-40cd-88c2-75d59b239b24",
+				"98d105f4-f008-4fb7-bad2-0afbd1063c66",
+				"45c5ee0a-5b00-4dd6-91c5-39c56749fea3",
+				"4f1ee1a3-f2a6-45f9-9458-7a8b5fda2a06",
+                "bd70a134-6456-4334-b7a9-2f1fd30d5db6"
+			]
+		},
+		"928d1fb2-a77a-4b75-b2ef-ccba165d306d": {
+			"name": "Aggravated Miner",
+			"notes": [],
+			"jumpers": [],
+			"branches": [],
+			"elements": [
+				"dce16cf5-fee5-4007-858e-794c1f43a718",
+                "311e1cef-1317-44a9-826c-ba9ea2028095"
+			],
+			"connections": []
+		},
+		"95ca062a-dfbb-4dc6-9776-73c6fd80b85a": {
+			"name": "Ferryman Dialogue",
+			"children": [
+                "0813789b-7a93-4c6e-b76c-da549357e9c4"
+			]
+		},
+		"a933be1a-31c2-45fd-97a3-a2191c6d8be7": {
+			"name": "Dialogue",
+			"children": [
+				"f2ee4631-21d5-49e3-a9e0-6fb1eea777b7",
+				"355d7214-53c1-4d61-8ffd-a9ef17d84142",
+				"95ca062a-dfbb-4dc6-9776-73c6fd80b85a",
+                "f04f7706-483a-44d5-9201-155ec8085452"
+			]
+		},
+		"ceda31e2-f69d-4500-adf5-6f894440e6b7": {
+			"name": "Village Elder",
+			"notes": [],
+			"jumpers": [
+                "570908ae-b56a-44be-a3e4-e252452f0f38"
+			],
+			"branches": [],
+			"elements": [
+				"262c88d1-d917-4912-82ce-9c2f5acb312c",
+				"6a7ef118-2e38-473e-b6c2-9881e0c4056c",
+				"ba89ab19-c31e-4042-8ea4-902d8efc284d",
+				"ec5510e1-ec02-439b-b7e2-98dc614cdce9",
+				"63d4ecca-b4cb-439a-83e0-280187d10bd3",
+                "86c85c79-b0a2-495f-abc4-ef746a8de4a1"
+			],
+			"connections": [
+				"541d771a-b076-4866-a21f-5ecb5a31a233",
+				"90536f3a-718b-4260-bcc4-19039a9e4188",
+				"33e956c1-d3a2-4bd5-85d3-6f0a22be39b6",
+				"1918701e-f994-45d2-bd89-4f9dd5c5d23e",
+				"3f152b28-56a9-4869-a9bb-7bb0909951e2",
+				"e1c54ad1-eeaf-4043-a97d-12f79f76dcff",
+                "1652c1e2-c04d-4d12-9f63-b8b5163feabd"
+			]
+		},
+		"f04f7706-483a-44d5-9201-155ec8085452": {
+			"name": "Felipe Dialogue",
+			"children": [
+                "30636e0d-58ce-484e-a1c3-07995bce2098"
+			]
+		},
+		"f2ee4631-21d5-49e3-a9e0-6fb1eea777b7": {
+			"name": "Miner Dialogue",
+			"children": [
+                "928d1fb2-a77a-4b75-b2ef-ccba165d306d"
+			]
+		},
+		"eacf1217-b018-4e2b-96fe-6bc4751c5800": {
+			"name": "Day 1",
+			"notes": [],
+			"elements": [
+                "7e17837e-0469-405a-b242-d3101d9f8213"
+			],
+			"connections": [],
+			"branches": [],
+			"jumpers": []
+		}
+	},
+	"notes": {
+		"4ee7bd49-1b8e-4159-8b82-19c7f6146bb2": {
+			"theme": "lightBlue",
+			"content": "<p>Please let me know if you have any troubles with these elements or if we need to reformat the various boards<\/p>"
+		},
+		"9555446a-7bea-48d6-958d-8be6d5fa88ff": {
+			"theme": "lightBlue",
+			"content": "<p>These description elements are just for story context and are not meant to be rendered.<\/p>"
+		}
+	},
+	"elements": {
+		"0b290aa1-e77e-4392-8e4c-f826c9d67b27": {
+			"theme": "default",
+			"outputs": [
+                "e4dc8ac4-3b11-469a-a50f-235b3a7c5c3f"
+			],
+			"components": [],
+			"content": "<p>An eager villager approaches you.<\/p>",
+			"title": "<p><span class=\"mention-component mention\" data-id=\"c40f7d79-eccf-4876-b3fd-2072f66850dd\" data-label=\"Felipe\" data-type=\"component\">Felipe<\/span> Starting Element<\/p>"
+		},
+		"22f88fea-8357-4bb3-9045-f79759693ebd": {
+			"theme": "default",
+			"outputs": [
+                "e2866cf2-9179-48f2-a194-396ccf64c604"
+			],
+			"attributes": [
+                "9d024c6a-1598-445b-a5f7-dcb87c85935f"
+			],
+			"components": [
+                "adf7f422-30a0-4e19-b45a-9e124f17f7b9"
+			],
+			"content": "<p>Hey, I'm just an old boatman talking your ear off. HA! Go, the villagers are expecting you. You don't want to be late for the Festa Junina.<\/p>",
+			"title": "<p>Finish talking<\/p>"
+		},
+		"262c88d1-d917-4912-82ce-9c2f5acb312c": {
+			"theme": "default",
+			"outputs": [
+                "541d771a-b076-4866-a21f-5ecb5a31a233"
+			],
+			"components": [
+                "c2787426-9ac2-458a-9ac8-19eaef7858fa"
+			],
+			"attributes": [
+                "9759c0e1-1791-44aa-9730-d90f359d1455"
+			],
+			"content": "<p>Ah, you must be the new preist whose come to our village. Another <em>missionario catolico<\/em>, come to spread the good news, no doubt. Tell me, have you not enough of a flock to tend to where you came from?<\/p>",
+			"title": "<p>Dialogue Start<\/p>"
+		},
+		"275afbc0-232c-4148-a57e-0852bcd1878d": {
+			"theme": "default",
+			"outputs": [
+                "397df084-d6fa-41fb-ab1f-7cffa4b826fd"
+			],
+			"components": [
+                "adf7f422-30a0-4e19-b45a-9e124f17f7b9"
+			],
+			"content": "<p><em>For generations this was a prosperous fishing village. My grandfather would tell me tales of the bountiful fishing in the shadow of the great mountain. The boats they would use to bring the fish to town would nearly sink from the weight of all their catch! But now, the damned <\/em><strong><em>garimpeiros<\/em><\/strong><em>, the miners, have moved in and scared away all the fish!<\/em><\/p>",
+			"title": "<p>Ask about the village<\/p>"
+		},
+		"33e78e37-f0e7-4548-919d-685b5173e161": {
+			"theme": "default",
+			"outputs": [
+				"2c6b84e7-caf8-4b39-b8b2-a0eeea55184b",
+                "fe43bb9d-75c1-4ceb-a6d3-32f04803858a"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p>Yes, Father! I apologize, I should have mentioned, the church and your quarters are still under repair right now. But not to worry, Father, it should be ready in no time! Until then, the village elder thought it would be best if you stayed with me! Is that alright with you Father?<\/p>",
+			"title": "<p>Your home?<\/p>"
+		},
+		"552153f1-8ba0-44d4-8ca4-cf495e5f9727": {
+			"theme": "default",
+			"outputs": [
+				"c2f79bf5-55b9-45c3-b12c-0c6f9d8a2b61",
+                "32636703-f8f9-4dd0-8781-32c9283401dd"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p>We used to be a prosperous fishing village. But ever since they found gold in the river - that's right, GOLD - well, no one cares too much about the fish. Especially me! I hate fish. It smells. But not everyone feels the same way. A few of the older villagers miss when we were just a simple fishing village. Before the miners showed up. <\/p>",
+			"title": "<p>Village Information<\/p>"
+		},
+		"5a0d2ebc-59b2-43b9-960e-06c46085aed2": {
+			"theme": "default",
+			"outputs": [
+                "ba0a1c80-87b3-44c0-ab85-aa22c6566669"
+			],
+			"components": [
+                "51d7f31e-e855-4991-83a9-6d1c6136f8e6"
+			],
+			"content": "<p>As your boat sails down the glassy surface of the Amazon, you take out the <span class=\"mention-component mention\" data-id=\"4d4627cc-3ee8-4bdc-b107-440575389f4f\" data-label=\"Archbishop's letter's letter\" data-type=\"component\">Archbishop's letter<\/span>. <br><br>\u2018<span class=\"mention-component mention\" data-id=\"bd738799-2600-4f7c-b88c-b467f1a348f8\" data-label=\"Father Francisco Xavier\" data-type=\"component\">Father Francisco Xavier<\/span>, your presence is required at the <span class=\"mention-component mention\" data-id=\"51d7f31e-e855-4991-83a9-6d1c6136f8e6\" data-label=\"Diamente de Rio\" data-type=\"component\">Diamente de Rio<\/span> village. On behalf of the church, we task you with providing spiritual guidance to our flock there. Go with God\u2019 <br><br>You tuck the letter away and admire the scenery as a stunning pink dolphin crests the surface of the water next to your boat, as if welcoming you.<\/p>",
+			"title": "<p>Game Start<\/p>"
+		},
+		"89694351-3cd1-4e4c-a244-c855fefeb61b": {
+			"theme": "default",
+			"outputs": [
+                "d7657280-61af-40d3-b99a-f956a73f6de6"
+			],
+			"attributes": [
+                "aaa4d77a-a979-4a48-bbe6-226fbc36c3f0"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p><em>Boa tarde! You must be Father Francisco! We are so honored to have a man of God with us again! The salvation of the village is in your hands! Our eternal souls are entrusted to you! The Devine Mercy of Jesus shines through your face!... Oh, hehe, forgive me Father, i should introduce myself. I am Felipe! The Village Elder entrusted your welcome to me! <\/em><\/p>",
+			"title": "<p>Start<\/p>"
+		},
+		"8aeb9035-b4e6-4bd8-89ca-a064c5d388be": {
+			"theme": "default",
+			"outputs": [
+				"1058d34e-af77-4eb7-acdf-8c636ed64292",
+				"15f42f7d-7f81-4535-a9f2-ba48ec020795",
+				"be70b36a-9232-465a-94d4-d7f745bd5983",
+                "b5d2d5f5-0e72-4545-b0a3-fbf346c87723"
+			],
+			"components": [
+                "51d7f31e-e855-4991-83a9-6d1c6136f8e6"
+			],
+			"content": "<p>The village is bright and lively. The various villagers gather to begin decorating for the upcoming festival. <\/p>",
+			"title": "<p>Evening Day 0<\/p>"
+		},
+		"986d7094-994a-4323-911b-f4565582f7c6": {
+			"theme": "default",
+			"outputs": [
+                "6154adfc-d3fa-4e89-93bb-c033cd1f5dd8"
+			],
+			"components": [
+                "d3c2f207-8db2-4702-ac1b-e916f82388c7"
+			],
+			"attributes": [
+                "95edd227-97cb-4bd5-9ac2-3fadd57a57ba"
+			],
+			"content": "<p>Boa Tarde! Isn't it wonderful seeing the town square all c-colorful and beautiful like this?... Oh wait *hiccup* I don't know y-you... you must be...<\/p>",
+			"title": "<p>Dialogue Start<\/p>"
+		},
+		"a4763617-fbe9-4330-8f36-a40d79caaf58": {
+			"theme": "default",
+			"outputs": [
+				"2f24b12e-1b31-4a06-b749-54556e6b845e",
+                "f909fc7f-ab14-471d-9337-48d52a2f2737"
+			],
+			"attributes": [
+                "a7cc3ec0-c017-4c3e-9620-9d196fdfa86b"
+			],
+			"components": [
+                "adf7f422-30a0-4e19-b45a-9e124f17f7b9"
+			],
+			"content": "<p><em>Welcome to <\/em><strong><em>Diamante de Rio! <\/em><\/strong><em>This village has lived in the shadow of the great river mountain for centuries. We are glad to finally have a priest again. <\/em><\/p>",
+			"title": "<p>Start<\/p>"
+		},
+		"a6db0260-d7db-4a21-a2c0-e68583ad5a12": {
+			"theme": "default",
+			"outputs": [
+                "272325c2-4d79-45d5-989c-321dc7ea6c98"
+			],
+			"attributes": [
+                "6b48487f-c021-496d-b3f6-3cccaf9ff8c5"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p>Sounds good!.Follow me!<\/p>",
+			"title": "<p>Dialogue end<\/p>"
+		},
+		"a77af373-587a-4562-905d-1c100a157004": {
+			"theme": "default",
+			"outputs": [
+                "4f540996-a97a-4037-8e7a-1d04196ed560"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p>It's easy to get bored in the village. Maybe one day I'll move out of here, and it might pay to know something more than how to fish.<\/p>",
+			"title": "<p>You know alot<\/p>"
+		},
+		"b4866df0-87e9-4878-b4bd-54b5846f1df4": {
+			"theme": "default",
+			"outputs": [
+                "3e928273-16e8-4930-bf10-92ff4cf53e01"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p>Of course, Father! I mean, Father Francisco... I MEAN...<\/p>",
+			"title": "<p>Call me francisco.<\/p>"
+		},
+		"cf116c30-31d9-4b06-a9bf-686266a9c57d": {
+			"theme": "default",
+			"outputs": [
+                "630142a2-a13f-4cfc-b3cb-80ffe484571a"
+			],
+			"components": [
+                "adf7f422-30a0-4e19-b45a-9e124f17f7b9"
+			],
+			"content": "<p><em>You saw that too? It is rare for an outsider to see such a good omen.<\/em> <em>Legends say much about the river spirits, but <\/em>boto<em> is not one to trifle with. He is said to bring guidance through the mazes of the river, but he can be a cunning and whily fellow.<\/em><\/p>",
+			"title": "<p>Ask about the Boto<\/p>"
+		},
+		"d32a4b33-ec1b-47e3-b56e-1a558dff08fa": {
+			"theme": "default",
+			"outputs": [
+				"e027b08e-b642-4c6d-a1c2-9cc074fc4cf0",
+                "dedc1b6d-cb3f-49d2-afe8-6d504c699ec6"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p>Yeah, he's doesn't like the new industry around here. A bit of wet blanket if you ask me. Ha HA! <br><br>But it's a word for miners who ... don't have the proper authorization. They really shouldn't be here, but we're so out on our own out here, ther's really no one to stop them. Plus they sell it cheaper than the bigger mining operations.<\/p>",
+			"title": "<p>Garimpeiros?<\/p>"
+		},
+		"dce16cf5-fee5-4007-858e-794c1f43a718": {
+			"theme": "default",
+			"outputs": [],
+			"components": [],
+			"content": null,
+			"title": null
+		},
+		"ef6c6352-1b84-4430-acce-5855d60b933f": {
+			"theme": "default",
+			"outputs": [
+                "7074f3e5-a108-44c6-b603-6789a65b9f88"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p><em>The honor and pleasure and joy is all mine, Father! Please, please, let me take your luggage and I will take you to my home! Let's get you settled in. I'm sure you've had a long journey.<\/em><\/p>",
+			"title": "<p>Thank you.<\/p>"
+		},
+		"f72583f0-623b-43d7-89e3-e98b13573ade": {
+			"theme": "default",
+			"outputs": [
+				"84b18b8b-0c31-43df-9c1f-8221c304dd6c",
+				"edbcc910-2075-45c7-b958-5ca89c8ec737",
+                "86767fff-a7b0-43e6-9c8c-d93d263db680"
+			],
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"content": "<p>I'm sure you will love it here! You got here just in time for the Festa Junina! The rest of the village should be gathering in the square soon! Let's drop off your bags and I'll take you there.<\/p>",
+			"title": "<p>Your home will do.<\/p>"
+		},
+		"6a7ef118-2e38-473e-b6c2-9881e0c4056c": {
+			"theme": "default",
+			"components": [
+                "c2787426-9ac2-458a-9ac8-19eaef7858fa"
+			],
+			"outputs": [
+                "90536f3a-718b-4260-bcc4-19039a9e4188"
+			],
+			"content": "<p>Hmm. Another lapdog of the archbishop, I see. When will the Church stop meddling in our affairs. Can we not be left alone? <\/p>",
+			"title": "<p>Lapdog<\/p>"
+		},
+		"ba89ab19-c31e-4042-8ea4-902d8efc284d": {
+			"theme": "default",
+			"components": [
+                "c2787426-9ac2-458a-9ac8-19eaef7858fa"
+			],
+			"outputs": [
+				"33e956c1-d3a2-4bd5-85d3-6f0a22be39b6",
+                "1918701e-f994-45d2-bd89-4f9dd5c5d23e"
+			],
+			"content": "<p>Let me give you some advice, priest. This village has sat beneath the river mountain for as long as memory can recall. The river itself is as old as the world. It's best for you to stay in your church. Do not meddle where you do not belong.<\/p>",
+			"title": "<p>Heed my warning.<\/p>"
+		},
+		"ec5510e1-ec02-439b-b7e2-98dc614cdce9": {
+			"theme": "default",
+			"components": [
+                "c2787426-9ac2-458a-9ac8-19eaef7858fa"
+			],
+			"outputs": [
+                "e1c54ad1-eeaf-4043-a97d-12f79f76dcff"
+			],
+			"content": "<p>Good. Follow in the footsteps of the last priest who was here long ago. He let the river and its people live in peace, and the river returned the favor. Take this lesson to heart.<\/p>",
+			"title": "<p>Not a problem<\/p>"
+		},
+		"63d4ecca-b4cb-439a-83e0-280187d10bd3": {
+			"theme": "default",
+			"components": [
+                "c2787426-9ac2-458a-9ac8-19eaef7858fa"
+			],
+			"outputs": [
+                "3f152b28-56a9-4869-a9bb-7bb0909951e2"
+			],
+			"content": "<p>You have been warned. If you don't listen to my advice, the weight of those consequences fall onto you.<\/p>",
+			"title": "<p>Don't tell me what to do<\/p>"
+		},
+		"86c85c79-b0a2-495f-abc4-ef746a8de4a1": {
+			"theme": "default",
+			"components": [
+                "c2787426-9ac2-458a-9ac8-19eaef7858fa"
+			],
+			"outputs": [
+                "1652c1e2-c04d-4d12-9f63-b8b5163feabd"
+			],
+			"attributes": [
+                "4299c23f-51e5-4267-af18-15cb11df50d7"
+			],
+			"content": "<p>May your god help you. <\/p><pre><code>starting_dialogue_elements.met_elder = true<\/code><\/pre>",
+			"title": "<p>Dialogue End<\/p>"
+		},
+		"055ad576-3412-4d8b-98e9-b36195303e72": {
+			"theme": "default",
+			"components": [
+                "d3c2f207-8db2-4702-ac1b-e916f82388c7"
+			],
+			"outputs": [
+                "8acd963c-6986-4aed-92ce-574d0b963828"
+			],
+			"content": "<p>Oh ssssshit! Forgive me, Father, I didn't know it was you. *Hiccup* I-I-I didn't know you were here already! P-please, meet my lovely *hiccup* wife <strong>Iara<\/strong>. <\/p>",
+			"title": "<p>Uh oh<\/p>"
+		},
+		"961fe682-c9ff-4d41-9d59-8a3c0b072e5a": {
+			"theme": "default",
+			"components": [
+                "d3c2f207-8db2-4702-ac1b-e916f82388c7"
+			],
+			"outputs": [
+                "f06ed38a-2f6f-4270-8e63-ce3faaa0ba4f"
+			],
+			"content": "<p>IARA! Come here now and meet the nice p-p-p-priest!<\/p>",
+			"title": "<p>Meet my wife<\/p>"
+		},
+		"e28086eb-7d82-496b-82d8-d0f26e043202": {
+			"theme": "default",
+			"components": [
+                "c66aabd9-597d-42e7-b91d-72ee13efed9e"
+			],
+			"outputs": [
+				"7ae3816f-1212-4ab1-898c-765900639f79",
+                "163b0217-47df-40a2-874c-8d56c81ab8d8"
+			],
+			"content": "<p>Boa Tarde, Father. I apologize for my husband's current condition. He likes to get... in the <em>spirit<\/em> for the festival. <\/p>",
+			"title": "<p>Iara<\/p>"
+		},
+		"ac0397d3-272f-491d-a67d-2f898c17665b": {
+			"theme": "default",
+			"components": [
+                "c66aabd9-597d-42e7-b91d-72ee13efed9e"
+			],
+			"outputs": [
+                "b639f601-dbd2-4f43-81d3-5ca403ae1f33"
+			],
+			"content": "<p>My husband can be rough around the edges, but he's a good man. I hope he didn't offend you with his potty mouth!<\/p>",
+			"title": "<p>Harsh language<\/p>"
+		},
+		"4afb52fe-3d44-495b-9e93-545426d86217": {
+			"theme": "default",
+			"components": [
+                "c66aabd9-597d-42e7-b91d-72ee13efed9e"
+			],
+			"outputs": [
+                "6d0bb1e2-20da-4792-9ed4-577105c85415"
+			],
+			"content": "<p>You don't know about the festival? Surely they have something similar where you're from. <br><br>We celebrate the saints and the river spirits for giving us its life. The fish, the water, our livelihoods. It's all a blessing and a gift. <\/p>",
+			"title": "<p>Festival Junina<\/p>"
+		},
+		"a60b4e72-315a-465e-a7d7-1fc325ad6bc1": {
+			"theme": "default",
+			"components": [
+                "c40f7d79-eccf-4876-b3fd-2072f66850dd"
+			],
+			"outputs": [
+				"5381469a-55ff-4a3a-bc78-e2ba7db5fbc8",
+                "d0b1ad45-07e4-4938-8dc6-cc12d4d9f1b4"
+			],
+			"content": "<p>Surely you must know of it if you've spent time in Brazil?! It's a celebration of thanks to the Saints for another bountiful fishing season! Although, recently, the fishing hasn't been as good as years past... ever since the miners showed up.<\/p>",
+			"title": null
+		},
+		"821e85ae-40f1-4796-8756-58cd4d3d1622": {
+			"theme": "default",
+			"components": [
+                "c66aabd9-597d-42e7-b91d-72ee13efed9e"
+			],
+			"outputs": [
+                "a9feca8b-d5cb-40cd-88c2-75d59b239b24"
+			],
+			"content": "<p>A priest that was a sailor?! That is not something you hear of everyday! Tell me, how did this come about? How does one go from a life of excitement on the high seas to the simple life of the clergy?<\/p>",
+			"title": "<p>A sailor?<\/p>"
+		},
+		"44478d95-9931-46bf-a61d-f5800e942883": {
+			"theme": "default",
+			"components": [
+                "d3c2f207-8db2-4702-ac1b-e916f82388c7"
+			],
+			"outputs": [
+				"98d105f4-f008-4fb7-bad2-0afbd1063c66",
+                "45c5ee0a-5b00-4dd6-91c5-39c56749fea3"
+			],
+			"content": "<p>IARA! *HIccup*<em> <\/em>Can't you see you've perturbed our new priest? Be careful, we've already upset the r-<em>river spirits<\/em>. We don't need to piss off G-g-god!<\/p>",
+			"title": "<p>Husband barges back in.<\/p>"
+		},
+		"9e1ab3a4-e05a-452b-8f2c-b76725266971": {
+			"theme": "default",
+			"components": [
+                "d3c2f207-8db2-4702-ac1b-e916f82388c7"
+			],
+			"outputs": [
+                "bd70a134-6456-4334-b7a9-2f1fd30d5db6"
+			],
+			"attributes": [
+                "2b6b1ffe-0da2-4562-acd8-aeb9f94163d2"
+			],
+			"content": "<p>Seeya around F-f-father! *Hiccup*<\/p><pre><code>starting_dialogue_elements.met_drunk = true<\/code><\/pre>",
+			"title": "<p>Dialogue End<\/p>"
+		},
+		"07c8e997-fefd-4f95-9f6f-4af18c052969": {
+			"theme": "default",
+			"components": [
+                "d3c2f207-8db2-4702-ac1b-e916f82388c7"
+			],
+			"outputs": [
+                "4f1ee1a3-f2a6-45f9-9458-7a8b5fda2a06"
+			],
+			"content": "<p>The river spirits were soooo good to us *hiccup* before those damned miners showed up. Ever since then, we haven't caught nearly as many fish as we used to. It's a damn s-s-shame!<\/p>",
+			"title": "<p>River spirits<\/p>"
+		},
+		"311e1cef-1317-44a9-826c-ba9ea2028095": {
+			"theme": "default",
+			"components": [],
+			"outputs": [],
+			"attributes": [
+				"30e98efa-9d14-464c-9653-4697dc31195a",
+                "3f91438c-fc19-4a64-880e-5d6c0d41efe6"
+			],
+			"content": "<pre><code>starting_dialogue_elements.met_miner = true<\/code><\/pre>",
+			"title": "<p>Dialogue End<\/p>"
+		},
+		"7e17837e-0469-405a-b242-d3101d9f8213": {
+			"theme": "default",
+			"components": [],
+			"outputs": [],
+			"content": null,
+			"title": "<p>Day 1 Start<\/p>"
+		}
+	},
+	"jumpers": {
+		"405755f1-283f-441d-b9a1-2291a0713dcc": {
+			"align": {
+				"x": "left",
+				"y": "center"
+			},
+			"width": 185,
+			"height": 86,
+			"elementId": "262c88d1-d917-4912-82ce-9c2f5acb312c"
+		},
+		"4926e9fd-9ca7-42ec-a37e-344c9b0af377": {
+			"align": {
+				"x": "left",
+				"y": "center"
+			},
+			"width": 185,
+			"height": 86,
+			"elementId": "a4763617-fbe9-4330-8f36-a40d79caaf58"
+		},
+		"5aa11b42-b2c2-4a68-afae-d039a2e3ffca": {
+			"width": 185,
+			"height": 86,
+			"elementId": null
+		},
+		"69ab7d1f-80c9-4c8a-96e0-ba52325beadf": {
+			"align": {
+				"x": "left",
+				"y": "center"
+			},
+			"width": 185,
+			"height": 86,
+			"elementId": "8aeb9035-b4e6-4bd8-89ca-a064c5d388be"
+		},
+		"700c1b99-8601-4cdd-9b13-f518975b6feb": {
+			"align": {
+				"x": "left",
+				"y": "center"
+			},
+			"width": 185,
+			"height": 86,
+			"elementId": "0b290aa1-e77e-4392-8e4c-f826c9d67b27"
+		},
+		"891277b4-87ca-41e5-a340-d9446aaac45a": {
+			"align": {
+				"x": "left",
+				"y": "center"
+			},
+			"width": 185,
+			"height": 86,
+			"elementId": "dce16cf5-fee5-4007-858e-794c1f43a718"
+		},
+		"9483ee61-a342-4f49-af6a-f61d9f7ff5b1": {
+			"align": {
+				"x": "left",
+				"y": "center"
+			},
+			"width": 185,
+			"height": 86,
+			"elementId": "89694351-3cd1-4e4c-a244-c855fefeb61b"
+		},
+		"fe288a22-422b-4651-8a3c-8aad0f7507fa": {
+			"width": 185,
+			"height": 86,
+			"elementId": "986d7094-994a-4323-911b-f4565582f7c6"
+		},
+		"570908ae-b56a-44be-a3e4-e252452f0f38": {
+			"elementId": "8aeb9035-b4e6-4bd8-89ca-a064c5d388be",
+			"align": {
+				"y": "center",
+				"x": "left"
+			},
+			"height": 86,
+			"width": 185
+		},
+		"7a1bdf78-8570-443d-add4-b950a568ec5e": {
+			"elementId": "a6db0260-d7db-4a21-a2c0-e68583ad5a12",
+			"align": {
+				"y": "center",
+				"x": "left"
+			},
+			"height": 86,
+			"width": 185
+		},
+		"26b4313f-c76e-4b3a-9e24-8a2a9bba0dec": {
+			"elementId": "8aeb9035-b4e6-4bd8-89ca-a064c5d388be",
+			"align": {
+				"y": "center",
+				"x": "left"
+			},
+			"height": 86,
+			"width": 185
+		},
+		"9fe82f70-8b39-4fb4-9d5a-b95523f37451": {
+			"elementId": "7e17837e-0469-405a-b242-d3101d9f8213",
+			"align": {
+				"y": "top",
+				"x": "center"
+			},
+			"height": 86,
+			"width": 185
+		}
+	},
+	"connections": {
+		"1058d34e-af77-4eb7-acdf-8c636ed64292": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "8aeb9035-b4e6-4bd8-89ca-a064c5d388be",
+			"targetid": "405755f1-283f-441d-b9a1-2291a0713dcc",
+			"sourceType": "elements",
+			"targetType": "jumpers",
+			"label": "<p>Talk to <span class=\"mention-component mention\" data-id=\"c2787426-9ac2-458a-9ac8-19eaef7858fa\" data-label=\"Village Elder\" data-type=\"component\">Village Elder<\/span> .<\/p>"
+		},
+		"15f42f7d-7f81-4535-a9f2-ba48ec020795": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "8aeb9035-b4e6-4bd8-89ca-a064c5d388be",
+			"targetid": "fe288a22-422b-4651-8a3c-8aad0f7507fa",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "jumpers",
+			"label": "<p>Talk to <span class=\"mention-component mention\" data-id=\"d3c2f207-8db2-4702-ac1b-e916f82388c7\" data-label=\"Drunk Villager\" data-type=\"component\">Drunk Villager<\/span> <\/p>"
+		},
+		"272325c2-4d79-45d5-989c-321dc7ea6c98": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "a6db0260-d7db-4a21-a2c0-e68583ad5a12",
+			"targetid": "69ab7d1f-80c9-4c8a-96e0-ba52325beadf",
+			"sourceType": "elements",
+			"targetType": "jumpers",
+			"label": null
+		},
+		"2c6b84e7-caf8-4b39-b8b2-a0eeea55184b": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "33e78e37-f0e7-4548-919d-685b5173e161",
+			"targetid": "f72583f0-623b-43d7-89e3-e98b13573ade",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": "<p>That will do.<\/p>"
+		},
+		"2f24b12e-1b31-4a06-b749-54556e6b845e": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "a4763617-fbe9-4330-8f36-a40d79caaf58",
+			"targetid": "cf116c30-31d9-4b06-a9bf-686266a9c57d",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>Ask about the pink dolphin.<\/p>"
+		},
+		"32636703-f8f9-4dd0-8781-32c9283401dd": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "552153f1-8ba0-44d4-8ca4-cf495e5f9727",
+			"targetid": "d32a4b33-ec1b-47e3-b56e-1a558dff08fa",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": "<p>The ferryman referred to the miners as 'garimpeiros'?<\/p>"
+		},
+		"397df084-d6fa-41fb-ab1f-7cffa4b826fd": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "275afbc0-232c-4148-a57e-0852bcd1878d",
+			"targetid": "22f88fea-8357-4bb3-9045-f79759693ebd",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": null
+		},
+		"3e928273-16e8-4930-bf10-92ff4cf53e01": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "b4866df0-87e9-4878-b4bd-54b5846f1df4",
+			"targetid": "f72583f0-623b-43d7-89e3-e98b13573ade",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>It's okay<\/p>"
+		},
+		"4f540996-a97a-4037-8e7a-1d04196ed560": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "a77af373-587a-4562-905d-1c100a157004",
+			"targetid": "a6db0260-d7db-4a21-a2c0-e68583ad5a12",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"label": "<p>I'm ready to go.<\/p>"
+		},
+		"630142a2-a13f-4cfc-b3cb-80ffe484571a": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "cf116c30-31d9-4b06-a9bf-686266a9c57d",
+			"targetid": "22f88fea-8357-4bb3-9045-f79759693ebd",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": null
+		},
+		"7074f3e5-a108-44c6-b603-6789a65b9f88": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "ef6c6352-1b84-4430-acce-5855d60b933f",
+			"targetid": "33e78e37-f0e7-4548-919d-685b5173e161",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>Your home?<\/p>"
+		},
+		"84b18b8b-0c31-43df-9c1f-8221c304dd6c": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "f72583f0-623b-43d7-89e3-e98b13573ade",
+			"targetid": "552153f1-8ba0-44d4-8ca4-cf495e5f9727",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": "<p>Tell me about Diamante de Rio.<\/p>"
+		},
+		"ba0a1c80-87b3-44c0-ab85-aa22c6566669": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "5a0d2ebc-59b2-43b9-960e-06c46085aed2",
+			"targetid": "4926e9fd-9ca7-42ec-a37e-344c9b0af377",
+			"sourceType": "elements",
+			"targetType": "jumpers",
+			"label": "<p>Talk to <span class=\"mention-component mention\" data-id=\"adf7f422-30a0-4e19-b45a-9e124f17f7b9\" data-label=\"Ferryman\" data-type=\"component\">Ferryman<\/span> <\/p>"
+		},
+		"be70b36a-9232-465a-94d4-d7f745bd5983": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "8aeb9035-b4e6-4bd8-89ca-a064c5d388be",
+			"targetid": "891277b4-87ca-41e5-a340-d9446aaac45a",
+			"sourceType": "elements",
+			"targetType": "jumpers",
+			"label": "<p>Talk to <span class=\"mention-component mention\" data-id=\"7fe20de0-7bab-4264-870e-07b1f0cd9147\" data-label=\"Aggravated Miner\" data-type=\"component\">Aggravated Miner<\/span> <\/p>"
+		},
+		"c2f79bf5-55b9-45c3-b12c-0c6f9d8a2b61": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "552153f1-8ba0-44d4-8ca4-cf495e5f9727",
+			"targetid": "a6db0260-d7db-4a21-a2c0-e68583ad5a12",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>I'm ready to go.<\/p>"
+		},
+		"d7657280-61af-40d3-b99a-f956a73f6de6": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "89694351-3cd1-4e4c-a244-c855fefeb61b",
+			"targetid": "ef6c6352-1b84-4430-acce-5855d60b933f",
+			"labelWidth": 208,
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": "<p>Thank you.<\/p>"
+		},
+		"dedc1b6d-cb3f-49d2-afe8-6d504c699ec6": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "d32a4b33-ec1b-47e3-b56e-1a558dff08fa",
+			"targetid": "a6db0260-d7db-4a21-a2c0-e68583ad5a12",
+			"sourceType": "elements",
+			"targetType": "elements",
+			"label": "<p>I'm ready to go.<\/p>"
+		},
+		"e027b08e-b642-4c6d-a1c2-9cc074fc4cf0": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "d32a4b33-ec1b-47e3-b56e-1a558dff08fa",
+			"targetid": "a77af373-587a-4562-905d-1c100a157004",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"label": "<p>You know alot about mining.<\/p>"
+		},
+		"e2866cf2-9179-48f2-a194-396ccf64c604": {
+			"type": "Flowchart",
+			"theme": "default",
+			"sourceid": "22f88fea-8357-4bb3-9045-f79759693ebd",
+			"targetid": "700c1b99-8601-4cdd-9b13-f518975b6feb",
+			"sourceType": "elements",
+			"targetType": "jumpers",
+			"label": null
+		},
+		"e4dc8ac4-3b11-469a-a50f-235b3a7c5c3f": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "0b290aa1-e77e-4392-8e4c-f826c9d67b27",
+			"targetid": "9483ee61-a342-4f49-af6a-f61d9f7ff5b1",
+			"sourceType": "elements",
+			"targetType": "jumpers",
+			"label": "<p><span class=\"mention-component mention\" data-id=\"c40f7d79-eccf-4876-b3fd-2072f66850dd\" data-label=\"Felipe\" data-type=\"component\">Felipe<\/span> approaches.<\/p>"
+		},
+		"edbcc910-2075-45c7-b958-5ca89c8ec737": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "f72583f0-623b-43d7-89e3-e98b13573ade",
+			"targetid": "a6db0260-d7db-4a21-a2c0-e68583ad5a12",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>Okay.<\/p>"
+		},
+		"f909fc7f-ab14-471d-9337-48d52a2f2737": {
+			"type": "Bezier",
+			"theme": "default",
+			"sourceid": "a4763617-fbe9-4330-8f36-a40d79caaf58",
+			"targetid": "275afbc0-232c-4148-a57e-0852bcd1878d",
+			"sourceType": "elements",
+			"targetFace": "left",
+			"targetType": "elements",
+			"labelLocation": 0.5,
+			"label": "<p>Ask about the village<\/p>"
+		},
+		"fe43bb9d-75c1-4ceb-a6d3-32f04803858a": {
+			"type": "Straight",
+			"theme": "default",
+			"sourceid": "33e78e37-f0e7-4548-919d-685b5173e161",
+			"targetid": "b4866df0-87e9-4878-b4bd-54b5846f1df4",
+			"sourceType": "elements",
+			"targetFace": "top",
+			"targetType": "elements",
+			"label": "<p>Please, call me Francisco<\/p>"
+		},
+		"541d771a-b076-4866-a21f-5ecb5a31a233": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "6a7ef118-2e38-473e-b6c2-9881e0c4056c",
+			"sourceType": "elements",
+			"sourceid": "262c88d1-d917-4912-82ce-9c2f5acb312c",
+			"theme": "default",
+			"label": "<p>I go where I'm directed.<\/p>"
+		},
+		"90536f3a-718b-4260-bcc4-19039a9e4188": {
+			"sourceType": "elements",
+			"sourceid": "6a7ef118-2e38-473e-b6c2-9881e0c4056c",
+			"targetid": "ba89ab19-c31e-4042-8ea4-902d8efc284d",
+			"targetType": "elements",
+			"targetFace": "left",
+			"type": "Straight",
+			"theme": "default",
+			"label": null
+		},
+		"33e956c1-d3a2-4bd5-85d3-6f0a22be39b6": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "ec5510e1-ec02-439b-b7e2-98dc614cdce9",
+			"sourceType": "elements",
+			"sourceid": "ba89ab19-c31e-4042-8ea4-902d8efc284d",
+			"theme": "default",
+			"label": "<p>I will not be a problem.<\/p>"
+		},
+		"1918701e-f994-45d2-bd89-4f9dd5c5d23e": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "63d4ecca-b4cb-439a-83e0-280187d10bd3",
+			"sourceType": "elements",
+			"sourceid": "ba89ab19-c31e-4042-8ea4-902d8efc284d",
+			"theme": "default",
+			"label": "<p>Don't tell me what to do. <\/p>"
+		},
+		"3f152b28-56a9-4869-a9bb-7bb0909951e2": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "86c85c79-b0a2-495f-abc4-ef746a8de4a1",
+			"sourceType": "elements",
+			"sourceid": "63d4ecca-b4cb-439a-83e0-280187d10bd3",
+			"theme": "default",
+			"label": "<p>I'll be going.<\/p>"
+		},
+		"e1c54ad1-eeaf-4043-a97d-12f79f76dcff": {
+			"sourceType": "elements",
+			"labelLocation": 0.5,
+			"sourceid": "ec5510e1-ec02-439b-b7e2-98dc614cdce9",
+			"targetid": "86c85c79-b0a2-495f-abc4-ef746a8de4a1",
+			"targetType": "elements",
+			"targetFace": "left",
+			"type": "Straight",
+			"theme": "default",
+			"label": "<p>I'll be going.<\/p>"
+		},
+		"1652c1e2-c04d-4d12-9f63-b8b5163feabd": {
+			"targetType": "jumpers",
+			"type": "Straight",
+			"targetid": "570908ae-b56a-44be-a3e4-e252452f0f38",
+			"sourceType": "elements",
+			"sourceid": "86c85c79-b0a2-495f-abc4-ef746a8de4a1",
+			"theme": "default",
+			"label": null
+		},
+		"6154adfc-d3fa-4e89-93bb-c033cd1f5dd8": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "055ad576-3412-4d8b-98e9-b36195303e72",
+			"sourceType": "elements",
+			"sourceid": "986d7094-994a-4323-911b-f4565582f7c6",
+			"theme": "default",
+			"labelLocation": 0.5,
+			"label": "<p>The new priest, Father Francisco.<\/p>"
+		},
+		"8acd963c-6986-4aed-92ce-574d0b963828": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "961fe682-c9ff-4d41-9d59-8a3c0b072e5a",
+			"sourceType": "elements",
+			"sourceid": "055ad576-3412-4d8b-98e9-b36195303e72",
+			"theme": "default",
+			"label": "<p>There's really no need...<\/p>"
+		},
+		"f06ed38a-2f6f-4270-8e63-ce3faaa0ba4f": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "e28086eb-7d82-496b-82d8-d0f26e043202",
+			"sourceType": "elements",
+			"sourceid": "961fe682-c9ff-4d41-9d59-8a3c0b072e5a",
+			"theme": "default",
+			"label": "<p>(Villager's wife enters)<\/p>"
+		},
+		"7ae3816f-1212-4ab1-898c-765900639f79": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "ac0397d3-272f-491d-a67d-2f898c17665b",
+			"sourceType": "elements",
+			"sourceid": "e28086eb-7d82-496b-82d8-d0f26e043202",
+			"theme": "default",
+			"labelLocation": 0.5,
+			"label": "<p>No need to apologize.<\/p>"
+		},
+		"163b0217-47df-40a2-874c-8d56c81ab8d8": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "4afb52fe-3d44-495b-9e93-545426d86217",
+			"sourceType": "elements",
+			"sourceid": "e28086eb-7d82-496b-82d8-d0f26e043202",
+			"theme": "default",
+			"labelLocation": 0.5,
+			"label": "<p>For the festival?<\/p>"
+		},
+		"86767fff-a7b0-43e6-9c8c-d93d263db680": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "a60b4e72-315a-465e-a7d7-1fc325ad6bc1",
+			"sourceType": "elements",
+			"sourceid": "f72583f0-623b-43d7-89e3-e98b13573ade",
+			"theme": "default",
+			"label": "<p>Tell me about this festival. <\/p>"
+		},
+		"5381469a-55ff-4a3a-bc78-e2ba7db5fbc8": {
+			"sourceType": "elements",
+			"sourceid": "a60b4e72-315a-465e-a7d7-1fc325ad6bc1",
+			"targetid": "552153f1-8ba0-44d4-8ca4-cf495e5f9727",
+			"targetType": "elements",
+			"targetFace": "bottom",
+			"type": "Straight",
+			"theme": "default",
+			"label": "<p>Tell me about Diamante de Rio.<\/p>"
+		},
+		"d0b1ad45-07e4-4938-8dc6-cc12d4d9f1b4": {
+			"targetType": "jumpers",
+			"type": "Straight",
+			"targetid": "7a1bdf78-8570-443d-add4-b950a568ec5e",
+			"sourceType": "elements",
+			"sourceid": "a60b4e72-315a-465e-a7d7-1fc325ad6bc1",
+			"theme": "default",
+			"label": "<p>I'm ready to go.<\/p>"
+		},
+		"b639f601-dbd2-4f43-81d3-5ca403ae1f33": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "821e85ae-40f1-4796-8756-58cd4d3d1622",
+			"sourceType": "elements",
+			"sourceid": "ac0397d3-272f-491d-a67d-2f898c17665b",
+			"theme": "default",
+			"labelLocation": 0.5,
+			"label": "<p>I used to be a sailor, I'm used to it.<\/p>"
+		},
+		"6d0bb1e2-20da-4792-9ed4-577105c85415": {
+			"sourceType": "elements",
+			"labelLocation": 0.5,
+			"sourceid": "4afb52fe-3d44-495b-9e93-545426d86217",
+			"targetid": "821e85ae-40f1-4796-8756-58cd4d3d1622",
+			"targetType": "elements",
+			"targetFace": "left",
+			"type": "Straight",
+			"theme": "default",
+			"label": "<p>I haven't spent too much time in one place. I was a sailor.<\/p>"
+		},
+		"a9feca8b-d5cb-40cd-88c2-75d59b239b24": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "44478d95-9931-46bf-a61d-f5800e942883",
+			"sourceType": "elements",
+			"sourceid": "821e85ae-40f1-4796-8756-58cd4d3d1622",
+			"theme": "default",
+			"labelLocation": 0.5,
+			"label": "<p>Maybe another time...<\/p>"
+		},
+		"98d105f4-f008-4fb7-bad2-0afbd1063c66": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "9e1ab3a4-e05a-452b-8f2c-b76725266971",
+			"sourceType": "elements",
+			"sourceid": "44478d95-9931-46bf-a61d-f5800e942883",
+			"theme": "default",
+			"labelLocation": 0.5,
+			"label": "<p>I'll be going.<\/p>"
+		},
+		"45c5ee0a-5b00-4dd6-91c5-39c56749fea3": {
+			"targetType": "elements",
+			"type": "Straight",
+			"targetid": "07c8e997-fefd-4f95-9f6f-4af18c052969",
+			"sourceType": "elements",
+			"sourceid": "44478d95-9931-46bf-a61d-f5800e942883",
+			"theme": "default",
+			"labelLocation": 0.5,
+			"label": "<p>Tell me about the river spirits<\/p>"
+		},
+		"4f1ee1a3-f2a6-45f9-9458-7a8b5fda2a06": {
+			"sourceType": "elements",
+			"labelLocation": 0.5,
+			"sourceid": "07c8e997-fefd-4f95-9f6f-4af18c052969",
+			"targetid": "9e1ab3a4-e05a-452b-8f2c-b76725266971",
+			"targetType": "elements",
+			"targetFace": "bottom",
+			"type": "Straight",
+			"theme": "default",
+			"label": "<p>I'll be going.<\/p>"
+		},
+		"bd70a134-6456-4334-b7a9-2f1fd30d5db6": {
+			"targetType": "jumpers",
+			"type": "Straight",
+			"targetid": "26b4313f-c76e-4b3a-9e24-8a2a9bba0dec",
+			"sourceType": "elements",
+			"sourceid": "9e1ab3a4-e05a-452b-8f2c-b76725266971",
+			"theme": "default",
+			"label": null
+		},
+		"b5d2d5f5-0e72-4545-b0a3-fbf346c87723": {
+			"targetType": "branches",
+			"type": "Straight",
+			"targetid": "022510ba-5c3d-4cc7-b000-3564198eb58d",
+			"sourceType": "elements",
+			"sourceid": "8aeb9035-b4e6-4bd8-89ca-a064c5d388be",
+			"theme": "default",
+			"label": null
+		},
+		"56689eca-7ce6-4cad-9fb9-42a054d6e740": {
+			"sourceType": "conditions",
+			"labelLocation": 0.5,
+			"sourceid": "22b6f7dd-bd6c-4954-8beb-83874ad76ac0",
+			"targetid": "1ff5d492-bfec-4494-b883-9f3ed9914cce",
+			"targetType": "branches",
+			"targetFace": "left",
+			"type": "Straight",
+			"theme": "default",
+			"label": null
+		},
+		"43be4cb5-975e-42ab-8a45-b81d3c6df1a6": {
+			"sourceType": "conditions",
+			"sourceid": "31e859dc-6028-4e4a-8abf-d135a8b0e55c",
+			"targetid": "9fe82f70-8b39-4fb4-9d5a-b95523f37451",
+			"targetType": "jumpers",
+			"targetFace": "left",
+			"type": "Straight",
+			"theme": "default",
+			"label": null
+		}
+	},
+	"branches": {
+		"022510ba-5c3d-4cc7-b000-3564198eb58d": {
+			"conditions": {
+				"ifCondition": "22b6f7dd-bd6c-4954-8beb-83874ad76ac0"
+			},
+			"theme": "default"
+		},
+		"1ff5d492-bfec-4494-b883-9f3ed9914cce": {
+			"conditions": {
+				"ifCondition": "31e859dc-6028-4e4a-8abf-d135a8b0e55c"
+			},
+			"theme": "default"
+		}
+	},
+	"components": {
+		"1023588e-74d4-4e1c-bfab-47badf2e8329": {
+			"children": [
+                "c7305bc3-82af-481f-bcde-3d8a5f200f2d"
+			],
+			"name": "Journal Entries"
+		},
+		"16ab1b1e-596c-4e3a-8c63-a108d2310e29": {
+			"attributes": [],
+			"name": "Mining Chief"
+		},
+		"43ee6171-a35d-40c9-ae8e-95a33c1dd44c": {
+			"children": [
+                "4d4627cc-3ee8-4bdc-b107-440575389f4f"
+			],
+			"name": "Inventory"
+		},
+		"4d4627cc-3ee8-4bdc-b107-440575389f4f": {
+			"attributes": [],
+			"name": "Archbishop's letter"
+		},
+		"51d7f31e-e855-4991-83a9-6d1c6136f8e6": {
+			"assets": {
+				"cover": {
+					"id": "76a83f68-0d89-49c1-9f40-53b54d12ed2f",
+					"type": "image"
+				}
+			},
+			"attributes": [
+                "4bc7ecf8-0c39-469c-bcd3-0691b9b94420"
+			],
+			"name": "Diamente de Rio"
+		},
+		"611ed1b2-1bf4-4f81-833b-67318fc1d41f": {
+			"children": [
+				"a02bca80-7064-474f-b4a7-dd393d735af0",
+                "51d7f31e-e855-4991-83a9-6d1c6136f8e6"
+			],
+			"name": "Locations"
+		},
+		"65005bda-15d0-41c5-867f-68c118829f08": {
+			"root": true,
+			"children": [
+				"1023588e-74d4-4e1c-bfab-47badf2e8329",
+				"43ee6171-a35d-40c9-ae8e-95a33c1dd44c",
+				"611ed1b2-1bf4-4f81-833b-67318fc1d41f",
+                "d75fd85a-31ea-4fb9-b296-14aed0815058"
+			],
+			"name": "Root"
+		},
+		"7fe20de0-7bab-4264-870e-07b1f0cd9147": {
+			"attributes": [],
+			"name": "Aggravated Miner"
+		},
+		"a02bca80-7064-474f-b4a7-dd393d735af0": {
+			"attributes": [],
+			"name": "Village Docks"
+		},
+		"adf7f422-30a0-4e19-b45a-9e124f17f7b9": {
+			"attributes": [],
+			"name": "Ferryman"
+		},
+		"bd738799-2600-4f7c-b88c-b467f1a348f8": {
+			"attributes": [],
+			"name": "Father Francisco Xavier"
+		},
+		"c2787426-9ac2-458a-9ac8-19eaef7858fa": {
+			"attributes": [],
+			"name": "Village Elder"
+		},
+		"c40f7d79-eccf-4876-b3fd-2072f66850dd": {
+			"attributes": [
+                "3f089876-ac86-48a6-95a2-df3a3fc65ed3"
+			],
+			"name": "Felipe"
+		},
+		"c7305bc3-82af-481f-bcde-3d8a5f200f2d": {
+			"attributes": [],
+			"name": "Striking Pink Dolphin Sighting"
+		},
+		"c88560b8-47a9-4f11-b69d-ae57b0f9609d": {
+			"attributes": [],
+			"name": "Boto"
+		},
+		"d3c2f207-8db2-4702-ac1b-e916f82388c7": {
+			"attributes": [],
+			"name": "Drunk Villager"
+		},
+		"d75fd85a-31ea-4fb9-b296-14aed0815058": {
+			"children": [
+				"c66aabd9-597d-42e7-b91d-72ee13efed9e",
+				"7fe20de0-7bab-4264-870e-07b1f0cd9147",
+				"d3c2f207-8db2-4702-ac1b-e916f82388c7",
+				"e955888a-d41b-400b-b3c6-2547b314a341",
+				"c40f7d79-eccf-4876-b3fd-2072f66850dd",
+				"c2787426-9ac2-458a-9ac8-19eaef7858fa",
+				"16ab1b1e-596c-4e3a-8c63-a108d2310e29",
+				"adf7f422-30a0-4e19-b45a-9e124f17f7b9",
+				"c88560b8-47a9-4f11-b69d-ae57b0f9609d",
+                "bd738799-2600-4f7c-b88c-b467f1a348f8"
+			],
+			"name": "Characters"
+		},
+		"e955888a-d41b-400b-b3c6-2547b314a341": {
+			"attributes": [],
+			"name": "Merchant"
+		},
+		"c66aabd9-597d-42e7-b91d-72ee13efed9e": {
+			"attributes": [],
+			"name": "Villager's Wife"
+		}
+	},
+	"attributes": {
+		"3f089876-ac86-48a6-95a2-df3a3fc65ed3": {
+			"cId": "c40f7d79-eccf-4876-b3fd-2072f66850dd",
+			"name": "obj_id",
+			"cType": "components",
+			"value": {
+				"data": "FELIPE",
+				"type": "string",
+				"plain": true
+			}
+		},
+		"4bc7ecf8-0c39-469c-bcd3-0691b9b94420": {
+			"cId": "51d7f31e-e855-4991-83a9-6d1c6136f8e6",
+			"name": null,
+			"cType": "components",
+			"value": {
+				"data": "<p>A once prosperous fishing village deep on the Amazon river, Diamente de Rio is known for its towering monolith <\/p>",
+				"type": "string"
+			}
+		},
+		"6b48487f-c021-496d-b3f6-3cccaf9ff8c5": {
+			"cId": "a6db0260-d7db-4a21-a2c0-e68583ad5a12",
+			"name": "tag",
+			"cType": "elements",
+			"value": {
+				"data": "dialogue_end",
+				"type": "string",
+				"plain": true
+			}
+		},
+		"9d024c6a-1598-445b-a5f7-dcb87c85935f": {
+			"cId": "22f88fea-8357-4bb3-9045-f79759693ebd",
+			"name": "tag",
+			"cType": "elements",
+			"value": {
+				"data": "dialogue_end",
+				"type": "string",
+				"plain": true
+			}
+		},
+		"a7cc3ec0-c017-4c3e-9620-9d196fdfa86b": {
+			"cId": "a4763617-fbe9-4330-8f36-a40d79caaf58",
+			"name": "tag",
+			"cType": "elements",
+			"value": {
+				"data": "dialogue_start",
+				"type": "string",
+				"plain": true
+			}
+		},
+		"aaa4d77a-a979-4a48-bbe6-226fbc36c3f0": {
+			"cId": "89694351-3cd1-4e4c-a244-c855fefeb61b",
+			"name": "tag",
+			"cType": "elements",
+			"value": {
+				"data": "dialogue_start",
+				"type": "string",
+				"plain": true
+			}
+		},
+		"9759c0e1-1791-44aa-9730-d90f359d1455": {
+			"name": "tag",
+			"value": {
+				"plain": true,
+				"type": "string",
+				"data": "dialogue_start"
+			},
+			"cType": "elements",
+			"cId": "262c88d1-d917-4912-82ce-9c2f5acb312c"
+		},
+		"95edd227-97cb-4bd5-9ac2-3fadd57a57ba": {
+			"name": "tag",
+			"value": {
+				"plain": true,
+				"type": "string",
+				"data": "dialogue_start"
+			},
+			"cType": "elements",
+			"cId": "986d7094-994a-4323-911b-f4565582f7c6"
+		},
+		"4299c23f-51e5-4267-af18-15cb11df50d7": {
+			"name": "tag",
+			"value": {
+				"plain": true,
+				"type": "string",
+				"data": "dialogue_end"
+			},
+			"cType": "elements",
+			"cId": "86c85c79-b0a2-495f-abc4-ef746a8de4a1"
+		},
+		"2b6b1ffe-0da2-4562-acd8-aeb9f94163d2": {
+			"name": "tag",
+			"value": {
+				"plain": true,
+				"type": "string",
+				"data": "dialogue_end"
+			},
+			"cType": "elements",
+			"cId": "9e1ab3a4-e05a-452b-8f2c-b76725266971"
+		},
+		"30e98efa-9d14-464c-9653-4697dc31195a": {
+			"name": "tag",
+			"value": {
+				"plain": true,
+				"type": "string",
+				"data": "dialogue_end"
+			},
+			"cType": "elements",
+			"cId": "311e1cef-1317-44a9-826c-ba9ea2028095"
+		},
+		"3f91438c-fc19-4a64-880e-5d6c0d41efe6": {
+			"name": "tag",
+			"value": {
+				"plain": true,
+				"type": "string",
+				"data": "day_0_end"
+			},
+			"cType": "elements",
+			"cId": "311e1cef-1317-44a9-826c-ba9ea2028095"
+		}
+	},
+	"assets": {
+		"647d0495-341f-42b2-8788-b47dace22bf8": {
+			"root": true,
+			"children": [
+                "76a83f68-0d89-49c1-9f40-53b54d12ed2f"
+			]
+		},
+		"76a83f68-0d89-49c1-9f40-53b54d12ed2f": {
+			"name": "Ko Panyi.jpeg",
+			"type": "image"
+		}
+	},
+	"variables": {
+		"747d0495-341f-42b2-8788-b47dace22bf8": {
+			"root": true,
+			"children": []
+		},
+		"b6aecf90-c76b-45e5-85d3-853670d1ffb9": {
+			"type": "boolean",
+			"name": "met_miner",
+			"value": false,
+			"cType": "boards",
+			"cId": "630fdb8a-48d6-473e-9974-2460f7eb2b41"
+		},
+		"6700398b-60c0-4f1d-97f8-6670af54764f": {
+			"type": "boolean",
+			"name": "met_elder",
+			"value": false,
+			"cType": "boards",
+			"cId": "630fdb8a-48d6-473e-9974-2460f7eb2b41"
+		},
+		"4634c6f4-1343-4441-b7b9-f93c19f6513f": {
+			"type": "boolean",
+			"name": "met_drunk",
+			"value": false,
+			"cType": "boards",
+			"cId": "630fdb8a-48d6-473e-9974-2460f7eb2b41"
+		}
+	},
+	"conditions": {
+		"22b6f7dd-bd6c-4954-8beb-83874ad76ac0": {
+			"script": "starting_dialogue_elements.met_elder",
+			"output": "56689eca-7ce6-4cad-9fb9-42a054d6e740"
+		},
+		"31e859dc-6028-4e4a-8abf-d135a8b0e55c": {
+			"script": "starting_dialogue_elements.met_drunk",
+			"output": "43be4cb5-975e-42ab-8a45-b81d3c6df1a6"
+		}
+	},
+	"name": "Pink Dolphin",
+	"cover": {
+		"file": "1775537067_69d48bab5df61.png",
+		"type": "cover-image"
+	}
+}

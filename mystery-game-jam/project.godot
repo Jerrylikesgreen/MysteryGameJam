@@ -24,6 +24,7 @@ DayNightCycle="*uid://jpiaij7cjr14"
 Globals="*uid://c81hjxjtdy8yt"
 Events="*uid://bbv5skyyoyhmi"
 Transition="*uid://g6kj2n5w5k7m"
+DialogueManager="*uid://cb4ttggamsdc"
 
 [file_customization]
 

@@ -37,7 +37,6 @@ folder_colors={
 "res://autoloads/": "red",
 "res://parley/": "orange",
 "res://parley/actions/": "orange",
-"res://parley/addons/": "orange",
 "res://parley/characters/": "orange",
 "res://parley/dialogue_sequences/": "orange",
 "res://parley/facts/": "orange",

@@ -26,11 +26,21 @@ Events="*uid://bbv5skyyoyhmi"
 Transition="*uid://g6kj2n5w5k7m"
 DialogueManager="*uid://cb4ttggamsdc"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/parley/plugin.cfg")
+
 [file_customization]
 
 folder_colors={
 "res://assets/": "purple",
 "res://autoloads/": "red",
+"res://parley/": "orange",
+"res://parley/actions/": "orange",
+"res://parley/addons/": "orange",
+"res://parley/characters/": "orange",
+"res://parley/dialogue_sequences/": "orange",
+"res://parley/facts/": "orange",
 "res://resources/": "blue",
 "res://scenes/": "pink",
 "res://scripts/": "green"
@@ -86,6 +96,13 @@ menu={
 3d_physics/layer_1="Player"
 3d_physics/layer_2="Interactible"
 3d_physics/layer_3="Floor"
+
+[parley]
+
+stores/character_store_path="uid://dldnmdpq65xno"
+stores/action_store_path="uid://ukeb7aswechn"
+stores/fact_store_path="uid://cxfxi3ovsa52r"
+test_dialogue_sequence/test_scene_path="res://parley/addons/parley/views/test_dialogue_sequence_scene.tscn"
 
 [physics]
 

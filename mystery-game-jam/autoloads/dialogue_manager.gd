@@ -9,7 +9,6 @@ var jumpers = {}
 var connections = {}
 
 var starting_element = ""
-var _debug = null
 
 func _ready() -> void:
 	_load_dialogue()
@@ -18,9 +17,10 @@ func _ready() -> void:
 	_parse_jumpers()
 	_parse_connections()
 	_parse_starting_element()
-	
 
 
+
+ 
 func _load_dialogue():
 	var file = FileAccess.open("res://assets/json/dialogue_test.json", FileAccess.READ)
 	

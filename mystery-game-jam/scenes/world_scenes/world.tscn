@@ -4,7 +4,7 @@
 [ext_resource type="Environment" uid="uid://bn6eyndtkgnkb" path="res://resources/systems/wold_enviorment.tres" id="2_i7141"]
 [ext_resource type="PackedScene" uid="uid://bmuuwrb15hman" path="res://scenes/ui/debuggin_hud.tscn" id="2_qfnet"]
 [ext_resource type="Script" uid="uid://ccybkweg8k406" path="res://scripts/world_environment.gd" id="3_4mrxx"]
-[ext_resource type="PackedScene" uid="uid://bk7qqemlfcqxh" path="res://actions_menu.tscn" id="4_i7141"]
+[ext_resource type="PackedScene" uid="uid://bk7qqemlfcqxh" path="res://scenes/ui/actions_menu.tscn" id="4_i7141"]
 [ext_resource type="PackedScene" uid="uid://ely50ss0yr71" path="res://scenes/ui/transition_screen.tscn" id="5_tkitp"]
 [ext_resource type="PackedScene" uid="uid://bahavtakdybaq" path="res://scenes/ui/dialoge_screen.tscn" id="6_e3hyu"]
 [ext_resource type="PackedScene" uid="uid://duwum2xa2mgqx" path="res://scenes/player.tscn" id="8_4mrxx"]

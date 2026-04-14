@@ -25,21 +25,17 @@ Globals="*uid://c81hjxjtdy8yt"
 Events="*uid://bbv5skyyoyhmi"
 Transition="*uid://g6kj2n5w5k7m"
 DialogueManager="*uid://cb4ttggamsdc"
+Parley="*uid://bc2badcwxxubf"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/parley/plugin.cfg")
+enabled=PackedStringArray()
 
 [file_customization]
 
 folder_colors={
 "res://assets/": "purple",
 "res://autoloads/": "red",
-"res://parley/": "orange",
-"res://parley/actions/": "orange",
-"res://parley/characters/": "orange",
-"res://parley/dialogue_sequences/": "orange",
-"res://parley/facts/": "orange",
 "res://resources/": "blue",
 "res://scenes/": "pink",
 "res://scripts/": "green"
@@ -98,9 +94,9 @@ menu={
 
 [parley]
 
-stores/character_store_path="uid://dldnmdpq65xno"
-stores/action_store_path="uid://ukeb7aswechn"
-stores/fact_store_path="uid://cxfxi3ovsa52r"
+stores/character_store_path="uid://b0q8s3muwucgo"
+stores/action_store_path="uid://bl0827nsgyleq"
+stores/fact_store_path="uid://b5adlgjuom3p2"
 test_dialogue_sequence/test_scene_path="res://parley/addons/parley/views/test_dialogue_sequence_scene.tscn"
 
 [physics]

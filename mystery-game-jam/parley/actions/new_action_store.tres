@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="ParleyActionStore" format=3 uid="uid://ukeb7aswechn"]
-
-[ext_resource type="Script" uid="uid://cel0yoviy6eqi" path="res://parley/addons/parley/models/action.gd" id="1_eelwi"]
-[ext_resource type="Script" uid="uid://b3tj6amhgmct6" path="res://parley/addons/parley/stores/action/action_store.gd" id="2_8b8dr"]
-
-[resource]
-script = ExtResource("2_8b8dr")
-id = "main"

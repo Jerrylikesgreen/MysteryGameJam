@@ -31,4 +31,5 @@ func step_trigger()->void:
 	pass
 
 func triger_dialoge()->void:
-	Events.dialogue_text(speaker_name, dialogue)
+	DialogueManager.show_example_dialogue_balloon(load("res://dialogue_sequences/ferryman_intro.dialogue"), "start")
+	# Events.dialogue_text(speaker_name, dialogue)

@@ -13,3 +13,6 @@ var asked_felipe_about_festival: bool = false
 var asked_felipe_about_village: bool = false
 var asked_felipe_about_miners: bool = false
 var you_know_a_lot_about_mining: bool = false
+
+# narrator
+var narrator_dialogue_cue: String = "start"

@@ -23,3 +23,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.688088, 2.1819348, -0.47503
 speaker_name = "Felipe"
 dialogue_file = "res://dialogue_sequences/felipe_intro.dialogue"
 has_dialogue = true
+
+[node name="StepTriggerGameIntro" parent="." index="6" unique_id=1643004664 instance=ExtResource("2_8621a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4529488, -1.1871052)
+speaker_name = "Narrator"
+dialogue_file = "res://dialogue_sequences/game_start_intro.dialogue"
+has_dialogue = true
+is_step_trigger = true

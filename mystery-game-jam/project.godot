@@ -88,7 +88,7 @@ menu={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogue_sequences/ferryman_intro.dialogue", "res://dialogue_sequences/felipe_intro.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogue_sequences/ferryman_intro.dialogue", "res://dialogue_sequences/felipe_intro.dialogue", "res://dialogue_sequences/game_start_intro.dialogue")
 
 [layer_names]
 

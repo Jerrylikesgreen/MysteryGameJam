@@ -1,0 +1,42 @@
+~ start
+Felipe: Boa tarde!
+Felipe: You must be Father Francisco! We are so honored to have a man of God with us again! The salvation of the village is in your hands! Our eternal souls are entrusted to you! The Divine Mercy of Jesus shines through your face!
+Felipe: ... Oh, hehe, forgive me Father, i should introduce myself. I am Felipe! The Village Elder entrusted your welcome to me!
+- Thank you.
+	Felipe: The honor and pleasure and joy is all mine, Father! Please, please, let me take your luggage and I will take you to my home! Let's get you settled in. I'm sure you've had a long journey.
+	- Your home?
+		Felipe: Yes, Father! I apologize, I should have mentioned, the church and your quarters are still under repair right now. But not to worry, Father, it should be ready in no time! Until then, the village elder thought it would be best if you stayed with me! Is that alright with you Father?
+		~ branch1
+		- Please, call me Francisco. [if State.call_me_francisco == false]
+			Felipe: Of course, Father! I mean, Father Francisco... I MEAN...
+			set State.call_me_francisco = true
+			=> branch1
+		- [if State.call_me_francisco == true]It's okay.[else]That will do.[/if]
+			Felipe: Felipe: I'm sure you will love it here! You got here just in time for the Festa Junina! The rest of the village should be gathering in the square soon! Let's drop off your bags and I'll take you there.
+			set State.felipe_dialogue_cue = "branch2"
+			=> branch2
+
+~ branch2
+- Tell me about this festival. [if State.asked_felipe_about_festival == false]
+	Felipe: Surely you must know of it if you've spent time in Brazil?! It's a celebration of thanks to the Saints for another bountiful fishing season! Although, recently, the fishing hasn't been as good as years past... ever since the miners showed up.
+	set State.asked_felipe_about_festival = true
+	set State.asked_felipe_intro_branch2_question = true
+	=> branch2
+- Tell me about Diamante de Rio. [if State.asked_felipe_about_village == false]
+	Felipe: We used to be a prosperous fishing village. But ever since they found gold in the river - that's right, GOLD - well, no one cares too much about the fish. Especially me! I hate fish. It smells. But not everyone feels the same way. A few of the older villagers miss when we were just a simple fishing village. Before the miners showed up.
+	set State.asked_felipe_about_village = true
+	set State.asked_felipe_intro_branch2_question = true
+	=> branch2
+- The ferryman referred to the miners as 'garimpeiros'? [if State.asked_felipe_about_village == true and State.asked_felipe_about_miners == false]
+	Felipe: Yeah, he's doesn't like the new industry around here. A bit of wet blanket if you ask me. Ha HA! 
+	Felipe: But it's a word for miners who ... don't have the proper authorization. They really shouldn't be here, but we're so out on our own out here, ther's really no one to stop them. Plus they sell it cheaper than the bigger mining operations.
+	set State.asked_felipe_about_miners = true
+	=> branch2
+- You know a lot about mining. [if State.asked_felipe_about_miners == true and State.you_know_a_lot_about_mining == false]
+	Felipe: It's easy to get bored in the village. Maybe one day I'll move out of here, and it might pay to know something more than how to fish.
+	set State.you_know_a_lot_about_mining = true
+	=> branch2
+- [if State.asked_felipe_intro_branch2_question == true]I'm ready to go.[else]Okay.[/if]
+	Felipe: Sounds good! Follow me!
+	# TODO: trigger fade to next scene
+	=> END

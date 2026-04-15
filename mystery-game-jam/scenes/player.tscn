@@ -43,4 +43,3 @@ shape = SubResource("CapsuleShape3D_qhqgy")
 [node name="PlayerController" type="Node" parent="." unique_id=46767391]
 unique_name_in_owner = true
 script = ExtResource("1_3vyb7")
-mouse_sensitivity = null

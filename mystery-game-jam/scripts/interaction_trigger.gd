@@ -2,7 +2,8 @@ class_name InteractionTrigger extends Area3D
 
 
 @export var speaker_name: String
-@export var dialogue: String
+@export var dialogue_file: String
+@export var cue: String
 @export var one_shot: bool  = false
 @export var has_dialogue: bool = false
 @export var is_step_trigger: bool = false
@@ -12,7 +13,7 @@ func _ready() -> void:
 
 func activate()->void:
 	if has_dialogue:
-		triger_dialoge()
+		trigger_dialogue()
 
 func _on_body_entered( body: Node3D )->void:
 	
@@ -21,7 +22,7 @@ func _on_body_entered( body: Node3D )->void:
 			step_trigger()
 		
 		if has_dialogue:
-			triger_dialoge()
+			trigger_dialogue()
 			
 		if one_shot:
 			queue_free()
@@ -30,6 +31,6 @@ func _on_body_entered( body: Node3D )->void:
 func step_trigger()->void:
 	pass
 
-func triger_dialoge()->void:
-	DialogueManager.show_example_dialogue_balloon(load("res://dialogue_sequences/ferryman_intro.dialogue"), "start")
+func trigger_dialogue()->void:
+	DialogueManager.show_example_dialogue_balloon(load(dialogue_file), cue)
 	# Events.dialogue_text(speaker_name, dialogue)

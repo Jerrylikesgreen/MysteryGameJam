@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bxickwoqsrlxt"]
 
 [ext_resource type="PackedScene" uid="uid://05eehc03y0et" path="res://scenes/world_scenes/world.tscn" id="1_f63oo"]
-[ext_resource type="PackedScene" uid="uid://c8v4h348t3t8g" path="res://scenes/interaction_trigger.tscn" id="2_p2i4k"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_f63oo"]
 size = Vector3(10, 5, 3)
@@ -21,11 +20,3 @@ mesh = SubResource("BoxMesh_f63oo")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D" index="0" unique_id=823429987]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3493376, 0)
 mesh = SubResource("PrismMesh_l3rjs")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="." index="5" unique_id=1237584995]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.614382, 2.251476, -1.5342438)
-
-[node name="InteractionTrigger" parent="CSGBox3D" index="0" unique_id=1756612069 instance=ExtResource("2_p2i4k")]
-speaker_name = "Ferryman"
-has_dialogue = true
-is_step_trigger = true

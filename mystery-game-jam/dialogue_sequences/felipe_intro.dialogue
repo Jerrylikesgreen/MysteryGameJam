@@ -12,11 +12,11 @@ Felipe: ... Oh, hehe, forgive me Father, i should introduce myself. I am Felipe!
 			set State.call_me_francisco = true
 			=> branch1
 		- [if State.call_me_francisco == true]It's okay.[else]That will do.[/if]
-			Felipe: Felipe: I'm sure you will love it here! You got here just in time for the Festa Junina! The rest of the village should be gathering in the square soon! Let's drop off your bags and I'll take you there.
 			set State.felipe_dialogue_cue = "branch2"
 			=> branch2
 
 ~ branch2
+Felipe: Felipe: Felipe: I'm sure you will love it here! You got here just in time for the Festa Junina! The rest of the village should be gathering in the square soon! Let's drop off your bags and I'll take you there.
 - Tell me about this festival. [if State.asked_felipe_about_festival == false]
 	Felipe: Surely you must know of it if you've spent time in Brazil?! It's a celebration of thanks to the Saints for another bountiful fishing season! Although, recently, the fishing hasn't been as good as years past... ever since the miners showed up.
 	set State.asked_felipe_about_festival = true

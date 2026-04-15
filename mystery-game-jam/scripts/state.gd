@@ -1,6 +1,7 @@
 extends Node
 
 # ferryman_intro
+var ferryman_dialogue_cue: String = "start"
 var asked_ferryman_about_pink_dolphin: bool = false
 var asked_ferryman_about_village: bool = false
 

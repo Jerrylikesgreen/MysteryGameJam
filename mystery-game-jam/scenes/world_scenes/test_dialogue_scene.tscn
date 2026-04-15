@@ -14,7 +14,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.073601365, 2.3706682, -4.8
 [node name="InteractionTrigger" parent="Ferryman" index="0" unique_id=1756612069 instance=ExtResource("2_8621a")]
 speaker_name = "Ferryman"
 dialogue_file = "res://dialogue_sequences/ferryman_intro.dialogue"
-cue = "start"
 has_dialogue = true
 
 [node name="Felipe" type="CSGBox3D" parent="." index="5" unique_id=393281777]

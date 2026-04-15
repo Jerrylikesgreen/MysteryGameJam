@@ -39,4 +39,5 @@ Felipe: Felipe: Felipe: I'm sure you will love it here! You got here just in tim
 - [if State.asked_felipe_intro_branch2_question == true]I'm ready to go.[else]Okay.[/if]
 	Felipe: Sounds good! Follow me!
 	# TODO: trigger fade to next scene
+	do Transition.change_scene("res://scenes/world_scenes/village_scene.tscn", "The Festa Junina begins...")
 	=> END

@@ -28,5 +28,6 @@ has_dialogue = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4529488, -1.1871052)
 speaker_name = "Narrator"
 dialogue_file = "res://dialogue_sequences/game_start_intro.dialogue"
+one_shot = true
 has_dialogue = true
 is_step_trigger = true

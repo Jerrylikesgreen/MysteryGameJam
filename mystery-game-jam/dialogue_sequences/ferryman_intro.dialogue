@@ -13,5 +13,7 @@ Ferryman: This village has lived in the shadow of the great river mountain for c
 	Ferryman: But now, the damned garimpeiros, the miners, have moved in and scared away all the fish!
 	set State.asked_ferryman_about_village = true
 	=> branch1
-- Goodbye => END
-=> END
+- Goodbye
+	# TODO - could put Felipe in a different scene so we don't have to worry about Francisco getting out of the boat...: 
+	# do Transition.change_scene("res://scenes/world_scenes/felipe_intro_scene.tscn", "Port")
+	=> END

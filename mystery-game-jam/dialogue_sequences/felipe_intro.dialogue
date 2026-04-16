@@ -22,7 +22,7 @@ Felipe: I'm sure you will love it here! You got here just in time for the Festa 
 	set State.asked_felipe_about_festival = true
 	set State.asked_felipe_intro_branch2_question = true
 	=> branch2
-- Tell me about Diamante de Rio. [if State.asked_felipe_about_village == false]
+- Tell me about Rio de Diamantina. [if State.asked_felipe_about_village == false]
 	Felipe: We used to be a prosperous fishing village. But ever since they found gold in the river - that's right, GOLD - well, no one cares too much about the fish. Especially me! I hate fish. It smells. But not everyone feels the same way. A few of the older villagers miss when we were just a simple fishing village. Before the miners showed up.
 	set State.asked_felipe_about_village = true
 	set State.asked_felipe_intro_branch2_question = true

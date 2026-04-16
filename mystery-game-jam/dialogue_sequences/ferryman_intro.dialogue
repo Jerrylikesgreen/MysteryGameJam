@@ -1,5 +1,5 @@
 ~ start
-Ferryman: Welcome to Diamante de Rio!
+Ferryman: Welcome to Rio de Diamantina!
 Ferryman: This village has lived in the shadow of the great river mountain for centuries. We are glad to finally have a priest again.
 ~ branch1
 - Ask about the pink dolphin. [if State.asked_ferryman_about_pink_dolphin == false]

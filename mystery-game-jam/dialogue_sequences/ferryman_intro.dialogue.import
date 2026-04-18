@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://p5bgxwgixgvt"
+path="res://.godot/imported/ferryman_intro.dialogue-8892d74e282ec4aeb9e142f288460ec1.tres"
+
+[deps]
+
+source_file="res://dialogue_sequences/ferryman_intro.dialogue"
+dest_files=["res://.godot/imported/ferryman_intro.dialogue-8892d74e282ec4aeb9e142f288460ec1.tres"]
+
+[params]
+
+defaults=true

@@ -2,7 +2,7 @@ class_name InteractionTrigger extends Area3D
 
 
 @export var speaker_name: String
-@export var dialogue: String
+@export var dialogue_file: String
 @export var one_shot: bool  = false
 @export var has_dialogue: bool = false
 @export var is_step_trigger: bool = false
@@ -12,7 +12,7 @@ func _ready() -> void:
 
 func activate()->void:
 	if has_dialogue:
-		triger_dialoge()
+		trigger_dialogue()
 
 func _on_body_entered( body: Node3D )->void:
 	
@@ -21,7 +21,7 @@ func _on_body_entered( body: Node3D )->void:
 			step_trigger()
 		
 		if has_dialogue:
-			triger_dialoge()
+			trigger_dialogue()
 			
 		if one_shot:
 			queue_free()
@@ -30,5 +30,10 @@ func _on_body_entered( body: Node3D )->void:
 func step_trigger()->void:
 	pass
 
-func triger_dialoge()->void:
-	Events.dialogue_text(speaker_name, dialogue)
+func trigger_dialogue() -> void:
+	var cue_key : String = speaker_name.to_lower() + "_dialogue_cue"
+	var cue: String = State.get(cue_key)
+	if cue == null:
+		push_warning("InteractionTrigger: No State variable found for '%s'" % cue_key)
+		return
+	DialogueManager.show_example_dialogue_balloon(load(dialogue_file), cue)

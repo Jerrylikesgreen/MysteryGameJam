@@ -1,0 +1,19 @@
+~ start
+Ferryman: Welcome to Rio de Diamantina!
+Ferryman: This village has lived in the shadow of the great river mountain for centuries. We are glad to finally have a priest again.
+~ branch1
+- Ask about the pink dolphin. [if State.asked_ferryman_about_pink_dolphin == false]
+	Ferryman: You saw that too? It is rare for an outsider to see such a good omen.
+	Ferryman: Legends say much about the river spirits, but boto is not one to trifle with. He is said to bring guidance through the mazes of the river, but he can be a cunning and whily fellow.
+	set State.asked_ferryman_about_pink_dolphin = true
+	=> branch1
+- Ask about the village. [if State.asked_ferryman_about_village == false]
+	Ferryman: For generations this was a prosperous fishing village. My grandfather would tell me tales of the bountiful fishing in the shadow of the great mountain.
+	Ferryman: The boats they would use to bring the fish to town would nearly sink from the weight of all their catch!
+	Ferryman: But now, the damned garimpeiros, the miners, have moved in and scared away all the fish!
+	set State.asked_ferryman_about_village = true
+	=> branch1
+- Goodbye
+	# TODO - could put Felipe in a different scene so we don't have to worry about Francisco getting out of the boat...: 
+	# do Transition.change_scene("res://scenes/world_scenes/felipe_intro_scene.tscn", "Port")
+	=> END

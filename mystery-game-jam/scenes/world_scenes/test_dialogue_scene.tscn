@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cpn0iaoyropiv"]
+
+[ext_resource type="PackedScene" uid="uid://05eehc03y0et" path="res://scenes/world_scenes/world.tscn" id="1_40gmt"]
+[ext_resource type="PackedScene" uid="uid://c8v4h348t3t8g" path="res://scenes/interaction_trigger.tscn" id="2_8621a"]
+
+[node name="test_dialogue_scene" unique_id=1137195390 instance=ExtResource("1_40gmt")]
+
+[node name="MeshInstance3D" parent="Floor" parent_id_path=PackedInt32Array(92399437) index="0" unique_id=1342619435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0074186325, -4.7683716e-07, -0.0048367977)
+
+[node name="Ferryman" type="CSGBox3D" parent="." index="4" unique_id=1237584995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.073601365, 2.3706682, -4.8887243)
+
+[node name="InteractionTrigger" parent="Ferryman" index="0" unique_id=1756612069 instance=ExtResource("2_8621a")]
+speaker_name = "Ferryman"
+dialogue_file = "res://dialogue_sequences/ferryman_intro.dialogue"
+has_dialogue = true
+
+[node name="Felipe" type="CSGBox3D" parent="." index="5" unique_id=393281777]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.688088, 2.1819348, -0.47503042)
+
+[node name="InteractionTrigger" parent="Felipe" index="0" unique_id=81883193 instance=ExtResource("2_8621a")]
+speaker_name = "Felipe"
+dialogue_file = "res://dialogue_sequences/felipe_intro.dialogue"
+has_dialogue = true
+
+[node name="StepTriggerGameIntro" parent="." index="6" unique_id=1643004664 instance=ExtResource("2_8621a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4529488, -1.1871052)
+speaker_name = "Narrator"
+dialogue_file = "res://dialogue_sequences/game_start_intro.dialogue"
+one_shot = true
+has_dialogue = true
+is_step_trigger = true

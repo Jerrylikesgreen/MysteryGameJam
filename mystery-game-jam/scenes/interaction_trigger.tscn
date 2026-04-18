@@ -7,6 +7,7 @@
 [node name="InteractionTrigger" type="Area3D" unique_id=1756612069]
 collision_layer = 2
 script = ExtResource("1_q1d61")
+dialogue = "asdf"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1381903341]
 shape = SubResource("SphereShape3D_kp0fc")

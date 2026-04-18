@@ -19,16 +19,12 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	if _in_dialogue:
-		return
 	_process_movement_input()
 	_process_jump_input()
 	_process_interact_input()
 	_process_menu_input()
 
 func _input(event: InputEvent) -> void:
-	if _in_dialogue:
-		return
 
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		look.emit(event.relative * mouse_sensitivity)
@@ -59,6 +55,9 @@ func _on_dialogue_ended(_resource: DialogueResource) -> void:
 
 
 func _process_movement_input() -> void:
+	if _in_dialogue:
+		return
+	
 	var input_dir := Vector3(
 		Input.get_action_strength("right") - Input.get_action_strength("left"),
 		0,
@@ -82,10 +81,14 @@ func _process_menu_input()->void:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _process_jump_input() -> void:
+	if _in_dialogue:
+		return
 	if Input.is_action_just_pressed("jump"):
 		jump.emit()
 
 
 func _process_interact_input() -> void:
+	if _in_dialogue:
+		return
 	if Input.is_action_just_pressed("interact"):
 		interact_signal.emit()

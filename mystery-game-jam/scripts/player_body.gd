@@ -3,6 +3,7 @@ extends CharacterBody3D
 
 @export var speed: float = 10.0
 @export var underwater_speed: float = 2.5
+@onready var under_water_visuals: Node3D = %UnderWaterVisuals
 
 @export var jump_velocity: float = 5.0
 @export var swim_up_force: float = 5.0
@@ -23,9 +24,16 @@ func _ready() -> void:
 func _check_underwater() -> void:
 	if Globals.is_underwater():
 		_is_under_water = true
+		
+		under_water_visuals.set_up(true)
 		print("under water")
 	else:
 		print("not under water")
+		_is_under_water = false
+		
+		under_water_visuals.set_up(false)
+		print("not under water")
+
 
 
 func _physics_process(delta: float) -> void:

@@ -25,6 +25,7 @@ Globals="*uid://c81hjxjtdy8yt"
 Events="*uid://bbv5skyyoyhmi"
 Transition="*uid://g6kj2n5w5k7m"
 DialogueManager="*uid://c3rodes2l3gxb"
+Parley="*uid://bc2badcwxxubf"
 State="*uid://cvor2wcfmnnro"
 
 [editor_plugins]
@@ -34,8 +35,10 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 [file_customization]
 
 folder_colors={
+"res://addons/": "orange",
 "res://assets/": "purple",
 "res://autoloads/": "red",
+"res://dialogue_sequences/": "teal",
 "res://resources/": "blue",
 "res://scenes/": "pink",
 "res://scripts/": "green"

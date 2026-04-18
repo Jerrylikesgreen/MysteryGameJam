@@ -4,12 +4,22 @@
 [ext_resource type="Script" uid="uid://dblpfawoopreg" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Script" uid="uid://bd5t8b8uiovpk" path="res://scripts/player_body.gd" id="2_qhqgy"]
 [ext_resource type="Script" uid="uid://dm5lkgrpr1l0d" path="res://scripts/interactable_area.gd" id="3_dqkch"]
+[ext_resource type="Script" uid="uid://3ve4abhqly1m" path="res://scripts/under_water_visuals.gd" id="4_fjrip"]
+[ext_resource type="PackedScene" uid="uid://cj0gogclv44ff" path="res://scenes/mobs/boto_dolphin/diving_equipment_1.tscn" id="4_qlg0r"]
+[ext_resource type="PackedScene" uid="uid://c841q8nc83aky" path="res://scenes/bubble_particle_emitter.tscn" id="5_tuyoq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u8vuu"]
 height = 2.852539
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qhqgy"]
 height = 2.6544952
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qlg0r"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_qlg0r"]
+material = SubResource("StandardMaterial3D_qlg0r")
+inner_radius = 0.087
+outer_radius = 0.191
 
 [node name="Player" type="Node3D" unique_id=1525480450]
 script = ExtResource("1_g2els")
@@ -28,7 +38,7 @@ unique_name_in_owner = true
 
 [node name="PlayerCamera" type="Camera3D" parent="PlayerBody/CameraPivot" unique_id=731162990]
 unique_name_in_owner = true
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.016662806)
 
 [node name="PlayerInteractDetection" type="Area3D" parent="PlayerBody/CameraPivot" unique_id=1319014182]
 unique_name_in_owner = true
@@ -39,6 +49,23 @@ script = ExtResource("3_dqkch")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerBody/CameraPivot/PlayerInteractDetection" unique_id=721235344]
 transform = Transform3D(1.9106855e-15, -4.3711385e-08, -0.99999994, -1, -4.3711385e-08, 0, -4.371139e-08, 0.99999994, -4.3711385e-08, 2.6000658e-08, 2.6000658e-08, -1.1612053)
 shape = SubResource("CapsuleShape3D_qhqgy")
+
+[node name="UnderWaterVisuals" type="Node3D" parent="PlayerBody" unique_id=1582003336]
+unique_name_in_owner = true
+visible = false
+script = ExtResource("4_fjrip")
+
+[node name="DivingEquipment" parent="PlayerBody/UnderWaterVisuals" unique_id=714420154 instance=ExtResource("4_qlg0r")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.2187385, -1.767297, 0.09793985)
+
+[node name="UnderWaterVisionMesh" type="MeshInstance3D" parent="PlayerBody/UnderWaterVisuals" unique_id=2003966707]
+transform = Transform3D(-1, 0, 8.742278e-08, -8.736989e-08, 0.034777377, -0.9993951, -3.0403342e-09, -0.9993951, -0.034777377, -0.0019912124, 0.0061277375, -0.054506615)
+mesh = SubResource("TorusMesh_qlg0r")
+
+[node name="BubbleParticleEmitter" parent="PlayerBody/UnderWaterVisuals" unique_id=452486647 instance=ExtResource("5_tuyoq")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.6708841)
+emitting = false
 
 [node name="PlayerController" type="Node" parent="." unique_id=46767391]
 unique_name_in_owner = true

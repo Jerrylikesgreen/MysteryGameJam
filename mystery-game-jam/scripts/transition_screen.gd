@@ -11,6 +11,8 @@ func _ready() -> void:
 
 	Transition.transition_in_signal.connect(_on_transition_in_signal)
 	Transition.transition_out_signal.connect(_on_transition_out_signal)
+	set_visible(true)
+	transition_player.play("transition_out")
 
 
 func _on_transition_in_signal(scene_name: String)->void:

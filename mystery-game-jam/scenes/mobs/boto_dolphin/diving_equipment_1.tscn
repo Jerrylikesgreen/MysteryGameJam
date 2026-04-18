@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cj0gogclv44ff"]
+
+[ext_resource type="PackedScene" uid="uid://dxv0y1yc58nkv" path="res://assets/player/diving_equipment.fbx" id="1_mpr6y"]
+
+[node name="diving_equipment1" unique_id=714420154 instance=ExtResource("1_mpr6y")]
+
+[node name="tanquedear" parent="." index="0" unique_id=1386541017]
+visible = false
+
+[node name="sapatpdireito" parent="." index="1" unique_id=1526800096]
+visible = false
+
+[node name="sapatoesquerdo" parent="." index="2" unique_id=940975690]
+visible = false
+
+[node name="vidro2" parent="capacete" parent_id_path=PackedInt32Array(299180402) index="10" unique_id=59047254]
+visible = false
+
+[node name="mangueira1" parent="." index="4" unique_id=969060172]
+visible = false
+
+[node name="mangueira2" parent="." index="5" unique_id=1069988626]
+visible = false
+
+[node name="mangueira3" parent="." index="6" unique_id=82982260]
+visible = false

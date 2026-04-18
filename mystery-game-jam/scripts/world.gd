@@ -4,8 +4,8 @@ class_name World extends Node3D
 
 
 func _ready() -> void:
-	_set_up()
-
+	call_deferred("_set_up")
+	Globals.set_underwater(false)
 
 func _set_up()->void:
 	

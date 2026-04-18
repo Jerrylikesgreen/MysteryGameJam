@@ -10,6 +10,9 @@ size = Vector3(12, 5, 3)
 
 [node name="village_scene" unique_id=1137195390 instance=ExtResource("1_f63oo")]
 
+[node name="DirectionalLight3D" parent="WorldEnvironment" parent_id_path=PackedInt32Array(1954665154) index="0" unique_id=307121766]
+transform = Transform3D(0.46268472, 0.8760795, 0.13567463, -0.2396915, -0.023717765, 0.97055924, 0.853505, -0.48158267, 0.19901499, -1658.3585, 512.242, -2065.6365)
+
 [node name="MeshInstance3D" parent="Floor" parent_id_path=PackedInt32Array(92399437) index="0" unique_id=1342619435]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0074186325, -4.7683716e-07, -0.0048367977)
 

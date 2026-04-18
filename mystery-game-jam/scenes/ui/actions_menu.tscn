@@ -24,7 +24,8 @@ script = ExtResource("3_o814q")
 scene_path_dic = {
 NodePath("RockButton"): ["res://scenes/world_scenes/rock_scene.tscn", "Rock Scene"],
 NodePath("PortButton"): ["res://scenes/world_scenes/port_scene.tscn", "The Port"],
-NodePath("VillageButton"): ["res://scenes/world_scenes/village_scene.tscn", "The Village"]
+NodePath("VillageButton"): ["res://scenes/world_scenes/village_scene.tscn", "The Village"],
+NodePath("UnderwaterButton"): ["res://scenes/world_scenes/under_water_scene.tscn", "Underwater "]
 }
 
 [node name="RockButton" type="Button" parent="ActionsButtons" unique_id=1810802835]
@@ -50,4 +51,13 @@ offset_top = 445.0
 offset_right = 514.0
 offset_bottom = 476.0
 text = "Village
+"
+
+[node name="UnderwaterButton" type="Button" parent="ActionsButtons" unique_id=1346084753]
+layout_mode = 0
+offset_left = 554.0
+offset_top = 251.0
+offset_right = 662.0
+offset_bottom = 282.0
+text = "Under Water
 "

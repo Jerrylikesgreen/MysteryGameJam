@@ -9,7 +9,6 @@ signal interact_signal
 @export var mouse_sensitivity: float = 0.15
 
 var is_mouse_free: bool = false
-var _in_ui: bool = false
 var _in_dialogue: bool = false
 
 func _ready() -> void:

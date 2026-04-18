@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://po2rnbi6it5"]
+
+[ext_resource type="PackedScene" uid="uid://05eehc03y0et" path="res://scenes/world_scenes/world.tscn" id="1_eeasx"]
+[ext_resource type="Script" uid="uid://fyfg4ujlbld4" path="res://scripts/under_water_scene.gd" id="2_4n7t3"]
+[ext_resource type="Environment" uid="uid://cweuuqd5b3nki" path="res://resources/systems/under_water_enviorment.tres" id="2_dcn0h"]
+
+[node name="UnderWaterScene" unique_id=1137195390 instance=ExtResource("1_eeasx")]
+script = ExtResource("2_4n7t3")
+
+[node name="WorldEnvironment" parent="." index="1" unique_id=1954665154]
+environment = ExtResource("2_dcn0h")

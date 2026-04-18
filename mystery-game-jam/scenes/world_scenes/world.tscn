@@ -6,8 +6,15 @@
 [ext_resource type="Script" uid="uid://ccybkweg8k406" path="res://scripts/world_environment.gd" id="3_4mrxx"]
 [ext_resource type="PackedScene" uid="uid://bk7qqemlfcqxh" path="res://scenes/ui/actions_menu.tscn" id="4_i7141"]
 [ext_resource type="PackedScene" uid="uid://ely50ss0yr71" path="res://scenes/ui/transition_screen.tscn" id="5_tkitp"]
+[ext_resource type="Script" uid="uid://btq2vonhtebc5" path="res://scripts/moon_ui.gd" id="6_ase13"]
+[ext_resource type="Texture2D" uid="uid://qmbgvyp2vyqi" path="res://assets/moon_phases/moon_0.png" id="6_bxv4k"]
 [ext_resource type="PackedScene" uid="uid://bahavtakdybaq" path="res://scenes/ui/dialoge_screen.tscn" id="6_e3hyu"]
 [ext_resource type="PackedScene" uid="uid://duwum2xa2mgqx" path="res://scenes/player.tscn" id="8_4mrxx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bxv4k"]
+font_size = 12
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyfjp"]
 albedo_color = Color(0.13858852, 0.071602665, 1.8049032e-08, 1)
@@ -33,6 +40,42 @@ visible = false
 
 [node name="TransitionScreen" parent="Ui" unique_id=1703614882 instance=ExtResource("5_tkitp")]
 visible = false
+
+[node name="Moon" type="CanvasLayer" parent="Ui" unique_id=797475876]
+script = ExtResource("6_ase13")
+
+[node name="MoonTexture" type="TextureRect" parent="Ui/Moon" unique_id=1293283430]
+unique_name_in_owner = true
+texture_filter = 2
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -37.0
+offset_top = 10.0
+offset_right = 35.0
+offset_bottom = 82.0
+grow_horizontal = 2
+texture = ExtResource("6_bxv4k")
+expand_mode = 1
+
+[node name="DayLabel" type="Label" parent="Ui/Moon/MoonTexture" unique_id=1113743970]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -11.5
+offset_right = 40.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "New Moon"
+label_settings = SubResource("LabelSettings_bxv4k")
+horizontal_alignment = 1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1954665154]
 environment = ExtResource("2_i7141")

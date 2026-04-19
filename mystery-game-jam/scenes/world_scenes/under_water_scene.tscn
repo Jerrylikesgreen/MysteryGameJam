@@ -9,3 +9,8 @@ script = ExtResource("2_4n7t3")
 
 [node name="WorldEnvironment" parent="." index="1" unique_id=1954665154]
 environment = ExtResource("2_dcn0h")
+
+[node name="BubbleParticleEmitter" parent="Player/PlayerBody/UnderWaterVisuals" parent_id_path=PackedInt32Array(1525480450, 1582003336) index="2" unique_id=452486647]
+amount = 20
+
+[editable path="Player"]

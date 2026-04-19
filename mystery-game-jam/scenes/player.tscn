@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c841q8nc83aky" path="res://scenes/bubble_particle_emitter.tscn" id="5_tuyoq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u8vuu"]
-height = 2.852539
+height = 1.423584
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qhqgy"]
 height = 2.6544952
@@ -30,18 +30,20 @@ collision_mask = 4
 script = ExtResource("2_qhqgy")
 
 [node name="PlayerCollisionShape" type="CollisionShape3D" parent="PlayerBody" unique_id=1189749041]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.42626953, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1407471, 0)
 shape = SubResource("CapsuleShape3D_u8vuu")
 
 [node name="CameraPivot" type="Node3D" parent="PlayerBody" unique_id=1485427654]
 unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.26153058, 0)
 
 [node name="PlayerCamera" type="Camera3D" parent="PlayerBody/CameraPivot" unique_id=731162990]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.016662806)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.46689355, 0.016662806)
 
 [node name="PlayerInteractDetection" type="Area3D" parent="PlayerBody/CameraPivot" unique_id=1319014182]
 unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.46689355, 0)
 collision_layer = 0
 collision_mask = 2
 script = ExtResource("3_dqkch")
@@ -52,7 +54,7 @@ shape = SubResource("CapsuleShape3D_qhqgy")
 
 [node name="UnderWaterVisuals" type="Node3D" parent="PlayerBody" unique_id=1582003336]
 unique_name_in_owner = true
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.72842413, 0)
 script = ExtResource("4_fjrip")
 
 [node name="DivingEquipment" parent="PlayerBody/UnderWaterVisuals" unique_id=714420154 instance=ExtResource("4_qlg0r")]
@@ -64,8 +66,9 @@ mesh = SubResource("TorusMesh_qlg0r")
 
 [node name="BubbleParticleEmitter" parent="PlayerBody/UnderWaterVisuals" unique_id=452486647 instance=ExtResource("5_tuyoq")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.6708841)
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, -2.2401443)
 emitting = false
+amount = 10
 
 [node name="PlayerController" type="Node" parent="." unique_id=46767391]
 unique_name_in_owner = true

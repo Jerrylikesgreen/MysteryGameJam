@@ -12,18 +12,17 @@ shader_parameter/highlight_threshold2 = 0.270000012825
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_umbte"]
 material = SubResource("ShaderMaterial_3263u")
-size = Vector2(100, 100)
+size = Vector2(200, 200)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amxg5"]
 albedo_color = Color(5.7155265e-08, 0.114821054, 0.1255281, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_3263u"]
 material = SubResource("StandardMaterial3D_amxg5")
-size = Vector2(100, 100)
+size = Vector2(200, 200)
 
 [node name="Water" type="MeshInstance3D" unique_id=1652149410]
 mesh = SubResource("PlaneMesh_umbte")
 
 [node name="WaterColor" type="MeshInstance3D" parent="." unique_id=1939502322]
-visible = false
 mesh = SubResource("PlaneMesh_3263u")

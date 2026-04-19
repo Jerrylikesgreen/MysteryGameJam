@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cvlviptq8hkdw"]
+
+[ext_resource type="PackedScene" uid="uid://c2crgsnfcy0g3" path="res://assets/fbx/village/ilha.fbx" id="1_4i1tp"]
+
+[node name="ilha" unique_id=1021647256 instance=ExtResource("1_4i1tp")]

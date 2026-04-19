@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://djtkjgoa1epby"]
+
+[ext_resource type="PackedScene" uid="uid://c2crgsnfcy0g3" path="res://assets/fbx/village/ilha.fbx" id="1_52awd"]
+[ext_resource type="Shape3D" uid="uid://dxlud0tmij88a" path="res://resources/collision_shapes/test.tres" id="2_tft83"]
+
+[node name="village_ground" unique_id=1021647256 instance=ExtResource("1_52awd")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=844514895]
+transform = Transform3D(0, 0, 420.83646, 0, 148.4417, 0, -698.3791, 0, 0, -5.227295, -58.136486, 10.961006)
+shape = ExtResource("2_tft83")

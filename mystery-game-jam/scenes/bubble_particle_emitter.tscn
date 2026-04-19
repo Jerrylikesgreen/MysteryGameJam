@@ -2,6 +2,13 @@
 
 [ext_resource type="SphereMesh" uid="uid://b31f2krckjwo" path="res://assets/bubble_mesh.tres" id="1_rwfag"]
 
+[sub_resource type="Curve" id="Curve_rwfag"]
+_data = [Vector2(0, 0.1460675), 0.0, 0.0, 0, 0, Vector2(0.45867765, 0.70786524), 0.0, 0.0, 0, 0, Vector2(1, 1), 1.4, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_lyxit"]
+curve = SubResource("Curve_rwfag")
+
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xwrkq"]
 emission_shape = 1
 emission_sphere_radius = 2.0
@@ -11,8 +18,10 @@ direction = Vector3(0, -1, 0)
 spread = 23.906
 gravity = Vector3(0.2, 1, 0.2)
 scale_min = 0.5
+scale_curve = SubResource("CurveTexture_lyxit")
 
 [node name="BubbleParticleEmitter" type="GPUParticles3D" unique_id=452486647]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
 amount = 5
 amount_ratio = 0.8447
 lifetime = 5.0
